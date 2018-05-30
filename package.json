@@ -1,0 +1,58 @@
+{
+	"name": "eslint-config-xo-typescript",
+	"version": "0.0.0",
+	"description": "ESLint shareable config for TypeScript to be used with eslint-config-xo",
+	"license": "MIT",
+	"repository": "xojs/eslint-config-xo-typescript",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"test": "ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"typescript",
+		"eslintconfig",
+		"xo",
+		"code",
+		"quality",
+		"style",
+		"lint",
+		"linter",
+		"jscs",
+		"jshint",
+		"jslint",
+		"eslint",
+		"validate",
+		"standard",
+		"strict",
+		"check",
+		"checker",
+		"verify",
+		"enforce",
+		"hint",
+		"simple"
+	],
+	"devDependencies": {
+		"ava": "*",
+		"eslint": "^4.10.0",
+		"eslint-plugin-typescript": "^0.12.0",
+		"temp-write": "^3.1.0",
+		"typescript": "^2.8.3",
+		"typescript-eslint-parser": "^15.0.0"
+	},
+	"peerDependencies": {
+		"eslint": ">=4.0.0",
+		"eslint-plugin-typescript": ">=0.12.0",
+		"typescript": ">=2.8.3",
+		"typescript-eslint-parser": ">=15.0.0"
+	}
+}
