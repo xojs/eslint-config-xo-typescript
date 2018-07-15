@@ -5,20 +5,20 @@ module.exports = {
 		'typescript'
 	],
 	settings: {
-		"import/resolver": {
-			"node": {
-				"extensions": [
-					".js",
-					".jsx",
-					".ts",
-					".tsx"
+		'import/resolver': {
+			'node': {
+				'extensions': [
+					'.js',
+					'.jsx',
+					'.ts',
+					'.tsx'
 				]
 			}
 		},
-		"import/parsers": {
-			"typescript-eslint-parser": [
-				".ts",
-				".tsx"
+		'import/parsers': {
+			'typescript-eslint-parser': [
+				'.ts',
+				'.tsx'
 			]
 		}
 	},
