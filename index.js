@@ -4,6 +4,24 @@ module.exports = {
 	plugins: [
 		'typescript'
 	],
+	settings: {
+		'import/resolver': {
+			'node': {
+				'extensions': [
+					'.js',
+					'.jsx',
+					'.ts',
+					'.tsx'
+				]
+			}
+		},
+		'import/parsers': {
+			'typescript-eslint-parser': [
+				'.ts',
+				'.tsx'
+			]
+		}
+	},
 	rules: {
 		'typescript/adjacent-overload-signatures': 'error',
 		'typescript/class-name-casing': 'error',
