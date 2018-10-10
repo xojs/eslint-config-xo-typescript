@@ -18,7 +18,10 @@ Add some ESLint config to your package.json:
 {
 	"name": "my-awesome-project",
 	"eslintConfig": {
-		"extends": ["xo", "xo-typescript"]
+		"extends": [
+			"xo",
+			"xo-typescript"
+		]
 	}
 }
 ```
@@ -27,7 +30,10 @@ Or to .eslintrc:
 
 ```json
 {
-	"extends": ["xo", "xo-typescript"]
+	"extends": [
+		"xo",
+		"xo-typescript"
+	]
 }
 ```
 
@@ -44,7 +50,10 @@ $ npm install --save-dev eslint-config-xo-typescript typescript-eslint-parser es
 {
 	"name": "my-awesome-project",
 	"xo": {
-		"extends": "xo-typescript"
+		"extends": "xo-typescript",
+		"extensions": [
+			"ts"
+		]
 	}
 }
 ```
