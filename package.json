@@ -42,17 +42,17 @@
 		"simple"
 	],
 	"devDependencies": {
-		"ava": "*",
-		"eslint": "^5.5.0",
-		"eslint-plugin-typescript": "^0.12.0",
+		"ava": "^0.25.0",
+		"eslint": "^5.9.0",
+		"eslint-plugin-typescript": "^0.13.0",
 		"temp-write": "^3.1.0",
-		"typescript": "^3.0.3",
-		"typescript-eslint-parser": "^18.0.0"
+		"typescript": "^3.1.6",
+		"typescript-eslint-parser": "^20.1.1"
 	},
 	"peerDependencies": {
-		"eslint": ">=5.5.0",
-		"eslint-plugin-typescript": ">=0.12.0",
-		"typescript": ">=2.8.3",
-		"typescript-eslint-parser": ">=15.0.0"
+		"eslint": ">=5.9.0",
+		"eslint-plugin-typescript": ">=0.13.0",
+		"typescript": ">=3.1.6",
+		"typescript-eslint-parser": ">=20.1.1"
 	}
 }

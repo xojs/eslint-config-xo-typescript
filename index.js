@@ -31,6 +31,10 @@ module.exports = {
 				allowExpressions: true
 			}
 		],
+		'typescript/generic-type-naming': [
+			'error',
+			'^[A-Z][a-zA-Z]+$'
+		],
 		'typescript/member-delimiter-style': 'error',
 		'typescript/member-ordering': 'error',
 		'typescript/no-angle-bracket-type-assertion': 'error',
