@@ -1,8 +1,8 @@
 'use strict';
 module.exports = {
-	parser: 'typescript-eslint-parser',
+	parser: '@typescript-eslint/parser',
 	plugins: [
-		'typescript'
+		'@typescript-eslint'
 	],
 	settings: {
 		'import/resolver': {
@@ -16,39 +16,124 @@ module.exports = {
 			}
 		},
 		'import/parsers': {
-			'typescript-eslint-parser': [
+			'@typescript-eslint/parser': [
 				'.ts',
 				'.tsx'
 			]
 		}
 	},
 	rules: {
-		'typescript/adjacent-overload-signatures': 'error',
-		'typescript/class-name-casing': 'error',
-		'typescript/explicit-function-return-type': [
+		'@typescript-eslint/adjacent-overload-signatures': 'error',
+		'@typescript-eslint/array-type': [
+			'error',
+			'array'
+		],
+		'@typescript-eslint/ban-types': [
+			'error',
+			{
+				types: {
+					String: {
+						message: 'Use `string` instead.',
+						fixWith: 'string'
+					},
+					Number: {
+						message: 'Use `number` instead.',
+						fixWith: 'number'
+					},
+					Boolean: {
+						message: 'Use `boolean` instead.',
+						fixWith: 'boolean'
+					},
+					Object: {
+						message: 'Use `object` instead.',
+						fixWith: 'object'
+					},
+					object: 'Use `{}` instead.',
+					Function: 'Use a specific function type instead, like `() => void`.',
+					any: {
+						message: 'Use `unknown` instead.',
+						fixWith: 'unknown'
+					},
+					// TODO: Enforce `undefined` over `null` here too?
+				}
+			}
+		],
+		'camelcase': 'off',
+		'@typescript-eslint/camelcase': [
+			'error',
+			{
+				properties: 'always',
+				ignoreDestructuring: false,
+			}
+		],
+		'@typescript-eslint/class-name-casing': 'error',
+		'@typescript-eslint/explicit-function-return-type': [
 			'error',
 			{
 				allowExpressions: true
 			}
 		],
-		'typescript/generic-type-naming': [
+		'@typescript-eslint/generic-type-naming': [
 			'error',
 			'^[A-Z][a-zA-Z]+$'
 		],
-		'typescript/member-delimiter-style': 'error',
-		'typescript/member-ordering': 'error',
-		'typescript/no-angle-bracket-type-assertion': 'error',
-		'typescript/no-array-constructor': 'error',
-		'typescript/no-empty-interface': 'error',
-		'typescript/no-inferrable-types': 'error',
-		'typescript/no-namespace': 'error',
-		'typescript/no-non-null-assertion': 'error',
-		'typescript/no-triple-slash-reference': 'error',
-		'typescript/no-type-alias': 'error',
-		'typescript/no-unused-vars': 'error',
-		'typescript/no-use-before-define': 'error',
-		'typescript/no-var-requires': 'error',
-		'typescript/prefer-namespace-keyword': 'error',
-		'typescript/type-annotation-spacing': 'error'
+		indent: 'off',
+		'@typescript-eslint/indent': [
+			'error',
+			'tab',
+			{
+				SwitchCase: 1
+			}
+		],
+		'@typescript-eslint/interface-name-prefix': [
+			'error',
+			'never'
+		],
+		'@typescript-eslint/member-delimiter-style': [
+			'error',
+			{
+				multiline: {
+					delimiter: 'semi',
+					requireLast: true
+				},
+				singleline: {
+					delimiter: 'semi',
+					requireLast: true
+				}
+			}
+		],
+		'@typescript-eslint/member-naming': [
+			'error',
+			{
+				private: '^_'
+			}
+		],
+		'@typescript-eslint/member-ordering': 'error',
+		'@typescript-eslint/no-angle-bracket-type-assertion': 'error',
+		'@typescript-eslint/no-array-constructor': 'error',
+		'@typescript-eslint/no-empty-interface': 'error',
+
+		// The `ban-types` rule handles this better
+		// '@typescript-eslint/no-explicit-any': 'error',
+
+		'@typescript-eslint/no-extraneous-class': 'error',
+		'@typescript-eslint/no-inferrable-types': 'error',
+		'@typescript-eslint/no-misused-new': 'error',
+		'@typescript-eslint/no-namespace': 'error',
+		'@typescript-eslint/no-non-null-assertion': 'error',
+		'@typescript-eslint/no-object-literal-type-assertion': 'error',
+		'@typescript-eslint/no-this-alias': [
+			'error',
+			{
+				allowDestructuring: true,
+			}
+		],
+		'@typescript-eslint/no-triple-slash-reference': 'error',
+		'@typescript-eslint/no-type-alias': 'error',
+		'@typescript-eslint/no-unused-vars': 'error',
+		'@typescript-eslint/no-var-requires': 'error',
+		'@typescript-eslint/prefer-interface': 'error',
+		'@typescript-eslint/prefer-namespace-keyword': 'error',
+		'@typescript-eslint/type-annotation-spacing': 'error'
 	}
 };

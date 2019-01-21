@@ -1,12 +1,12 @@
 # eslint-config-xo-typescript [![Build Status](https://travis-ci.org/xojs/eslint-config-xo-typescript.svg?branch=master)](https://travis-ci.org/xojs/eslint-config-xo-typescript)
 
-> ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for TypeScript to be used with [eslint-config-xo](https://github.com/xojs/eslint-config-xo)
+> ESLint [shareable config](https://eslint.org/docs/developer-guide/shareable-configs.html) for TypeScript to be used with [eslint-config-xo](https://github.com/xojs/eslint-config-xo)
 
 
 ## Install
 
 ```
-$ npm install --save-dev eslint-config-xo eslint-config-xo-typescript typescript-eslint-parser eslint-plugin-typescript
+$ npm install --save-dev eslint-config-xo eslint-config-xo-typescript @typescript-eslint/eslint-plugin
 ```
 
 
@@ -43,7 +43,7 @@ Or to .eslintrc:
 ### Use with XO
 
 ```
-$ npm install --save-dev eslint-config-xo-typescript typescript-eslint-parser eslint-plugin-typescript
+$ npm install --save-dev eslint-config-xo-typescript @typescript-eslint/eslint-plugin
 ```
 
 ```json
