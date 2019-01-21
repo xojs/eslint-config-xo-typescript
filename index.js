@@ -133,7 +133,19 @@ module.exports = {
 		],
 		'@typescript-eslint/no-triple-slash-reference': 'error',
 		'@typescript-eslint/no-type-alias': 'error',
-		'@typescript-eslint/no-unused-vars': 'error',
+		'no-unused-vars': 'off',
+		'@typescript-eslint/no-unused-vars': [
+			'error',
+			{
+				vars: 'all',
+				varsIgnorePattern: '^React$',
+				args: 'after-used',
+				ignoreRestSiblings: true,
+				argsIgnorePattern: '^_$',
+				caughtErrors: 'all',
+				caughtErrorsIgnorePattern: '^_$'
+			}
+		],
 		'@typescript-eslint/no-var-requires': 'error',
 		'@typescript-eslint/prefer-interface': 'error',
 		'@typescript-eslint/prefer-namespace-keyword': 'error',
