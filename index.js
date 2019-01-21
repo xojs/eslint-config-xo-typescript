@@ -50,6 +50,9 @@ module.exports = {
 					},
 					object: 'Use `{}` instead.',
 					Function: 'Use a specific function type instead, like `() => void`.',
+
+					// This one doesn't seem to be working.
+					// TODO: Report it.
 					any: {
 						message: 'Use `unknown` instead.',
 						fixWith: 'unknown'
@@ -75,7 +78,7 @@ module.exports = {
 		],
 		'@typescript-eslint/generic-type-naming': [
 			'error',
-			'^[A-Z][a-zA-Z]+$'
+			'^T$|^[A-Z][a-zA-Z]+$'
 		],
 		indent: 'off',
 		'@typescript-eslint/indent': [
