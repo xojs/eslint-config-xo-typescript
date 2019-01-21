@@ -1,6 +1,9 @@
 'use strict';
 module.exports = {
 	parser: '@typescript-eslint/parser',
+	parserOptions: {
+		jsx: true
+	},
 	plugins: [
 		'@typescript-eslint'
 	],
