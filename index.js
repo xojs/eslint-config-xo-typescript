@@ -152,6 +152,7 @@ module.exports = {
 		'@typescript-eslint/no-var-requires': 'error',
 		'@typescript-eslint/prefer-interface': 'error',
 		'@typescript-eslint/prefer-namespace-keyword': 'error',
+		'@typescript-eslint/restrict-plus-operands': 'error',
 		'@typescript-eslint/type-annotation-spacing': 'error'
 	}
 };
