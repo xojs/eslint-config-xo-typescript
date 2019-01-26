@@ -153,7 +153,6 @@ module.exports = {
 			'error',
 			{
 				vars: 'all',
-				varsIgnorePattern: '^React$',
 				args: 'after-used',
 				ignoreRestSiblings: true,
 				argsIgnorePattern: '^_$',
