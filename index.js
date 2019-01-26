@@ -161,7 +161,11 @@ module.exports = {
 			}
 		],
 		'@typescript-eslint/no-var-requires': 'error',
-		'@typescript-eslint/prefer-interface': 'error',
+
+		// Disabled as I would like to *enforce* type aliases instead:
+		// https://github.com/typescript-eslint/typescript-eslint/issues/142
+		// '@typescript-eslint/prefer-interface': 'error',
+
 		'@typescript-eslint/prefer-namespace-keyword': 'error',
 		'@typescript-eslint/restrict-plus-operands': 'error',
 		'@typescript-eslint/type-annotation-spacing': 'error'
