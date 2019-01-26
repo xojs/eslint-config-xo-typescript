@@ -2,6 +2,7 @@
 module.exports = {
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
+		sourceType: 'module',
 		jsx: true,
 		project: 'tsconfig.json'
 	},
@@ -117,6 +118,7 @@ module.exports = {
 		],
 		'@typescript-eslint/member-ordering': 'error',
 		'@typescript-eslint/no-angle-bracket-type-assertion': 'error',
+		'no-array-constructor': 'off',
 		'@typescript-eslint/no-array-constructor': 'error',
 		'@typescript-eslint/no-empty-interface': 'error',
 
