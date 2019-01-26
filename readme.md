@@ -12,7 +12,7 @@ $ npm install --save-dev eslint-config-xo eslint-config-xo-typescript @typescrip
 
 ## Usage
 
-Add some ESLint config to your package.json:
+Add some ESLint config to your package.json (or `.eslintrc`):
 
 ```json
 {
@@ -26,14 +26,20 @@ Add some ESLint config to your package.json:
 }
 ```
 
-Or to .eslintrc:
+*Note:* If your `tsconfig.json` is not in the same directory as `package.json`, you will have to set the path yourself:
 
 ```json
 {
-	"extends": [
-		"xo",
-		"xo-typescript"
-	]
+	"name": "my-awesome-project",
+	"eslintConfig": {
+		"extends": [
+			"xo",
+			"xo-typescript"
+		],
+		"parserOptions": {
+			"project": "some-path/tsconfig.json"
+		}
+	}
 }
 ```
 
