@@ -140,7 +140,11 @@ module.exports = {
 			}
 		],
 		'@typescript-eslint/no-triple-slash-reference': 'error',
-		'@typescript-eslint/no-type-alias': 'error',
+
+		// Disabled as I would like to *enforce* type aliases instead:
+		// https://github.com/typescript-eslint/typescript-eslint/issues/142
+		// '@typescript-eslint/no-type-alias': 'error',
+
 		'no-unused-vars': 'off',
 		'@typescript-eslint/no-unused-vars': [
 			'error',
