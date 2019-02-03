@@ -164,6 +164,8 @@ module.exports = {
 				caughtErrorsIgnorePattern: '^_$'
 			}
 		],
+		'no-useless-constructor': 'off',
+		'@typescript-eslint/no-useless-constructor': 'error',
 		'@typescript-eslint/no-var-requires': 'error',
 
 		// Disabled as I would like to *enforce* type aliases instead:
