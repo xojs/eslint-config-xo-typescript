@@ -152,6 +152,7 @@ module.exports = {
 		// https://github.com/typescript-eslint/typescript-eslint/issues/142
 		// '@typescript-eslint/no-type-alias': 'error',
 
+		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
 		'no-unused-vars': 'off',
 		'@typescript-eslint/no-unused-vars': [
 			'error',
