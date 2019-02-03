@@ -49,6 +49,10 @@ module.exports = {
 						message: 'Use `boolean` instead.',
 						fixWith: 'boolean'
 					},
+					Symbol: {
+						message: 'Use `symbol` instead.',
+						fixWith: 'symbol'
+					},
 					Object: {
 						message: 'Use `object` instead.',
 						fixWith: 'object'
