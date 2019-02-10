@@ -182,6 +182,10 @@ module.exports = {
 		'@typescript-eslint/prefer-namespace-keyword': 'error',
 		'@typescript-eslint/promise-function-async': 'error',
 		'@typescript-eslint/restrict-plus-operands': 'error',
-		'@typescript-eslint/type-annotation-spacing': 'error'
+		'@typescript-eslint/type-annotation-spacing': 'error',
+
+		// TypeScript supports these features
+		'prefer-object-spread': 'error',
+		'no-useless-catch': 'error'
 	}
 };
