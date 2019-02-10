@@ -186,6 +186,10 @@ module.exports = {
 
 		// TypeScript supports these features
 		'prefer-object-spread': 'error',
-		'no-useless-catch': 'error'
+		'no-useless-catch': 'error',
+
+		// The rule is deprecated in ESLint and it doesn't fully make sense for TypeScript.
+		// TODO: Remove this when the rule is removed from XO.
+		'valid-jsdoc': 'off'
 	}
 };
