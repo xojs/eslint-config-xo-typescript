@@ -130,6 +130,7 @@ module.exports = {
 		// '@typescript-eslint/no-explicit-any': 'error',
 
 		'@typescript-eslint/no-extraneous-class': 'error',
+		'@typescript-eslint/no-for-in-array': 'error',
 		'@typescript-eslint/no-inferrable-types': 'error',
 		'@typescript-eslint/no-misused-new': 'error',
 		'@typescript-eslint/no-namespace': 'error',
