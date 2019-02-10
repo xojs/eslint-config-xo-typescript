@@ -11,8 +11,8 @@ module.exports = {
 	],
 	settings: {
 		'import/resolver': {
-			'node': {
-				'extensions': [
+			node: {
+				extensions: [
 					'.js',
 					'.jsx',
 					'.ts',
@@ -65,17 +65,17 @@ module.exports = {
 					any: {
 						message: 'Use `unknown` instead.',
 						fixWith: 'unknown'
-					},
+					}
 					// TODO: Enforce `undefined` over `null` here too?
 				}
 			}
 		],
-		'camelcase': 'off',
+		camelcase: 'off',
 		'@typescript-eslint/camelcase': [
 			'error',
 			{
 				properties: 'always',
-				ignoreDestructuring: false,
+				ignoreDestructuring: false
 			}
 		],
 		'@typescript-eslint/class-name-casing': 'error',
@@ -145,10 +145,11 @@ module.exports = {
 				allowAsParameter: true
 			}
 		],
+		'@typescript-eslint/no-require-imports': 'error',
 		'@typescript-eslint/no-this-alias': [
 			'error',
 			{
-				allowDestructuring: true,
+				allowDestructuring: true
 			}
 		],
 		'@typescript-eslint/no-triple-slash-reference': 'error',
