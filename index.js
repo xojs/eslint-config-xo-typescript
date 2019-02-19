@@ -124,7 +124,12 @@ module.exports = {
 		'@typescript-eslint/no-angle-bracket-type-assertion': 'error',
 		'no-array-constructor': 'off',
 		'@typescript-eslint/no-array-constructor': 'error',
-		'@typescript-eslint/no-empty-interface': 'error',
+		'@typescript-eslint/no-empty-interface': [
+			'error',
+			{
+				allowSingleExtends: true
+			}
+		],
 
 		// The `ban-types` rule handles this better
 		// '@typescript-eslint/no-explicit-any': 'error',
