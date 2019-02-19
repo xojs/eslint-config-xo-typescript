@@ -175,6 +175,7 @@ module.exports = {
 		'no-useless-constructor': 'off',
 		'@typescript-eslint/no-useless-constructor': 'error',
 		'@typescript-eslint/no-var-requires': 'error',
+		'@typescript-eslint/prefer-function-type': 'error',
 
 		// Disabled as I would like to *enforce* type aliases instead:
 		// https://github.com/typescript-eslint/typescript-eslint/issues/142
