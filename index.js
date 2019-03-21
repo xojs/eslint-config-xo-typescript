@@ -187,7 +187,10 @@ module.exports = {
 		// '@typescript-eslint/prefer-interface': 'error',
 
 		'@typescript-eslint/prefer-namespace-keyword': 'error',
-		'@typescript-eslint/promise-function-async': 'error',
+
+		// Disabled because of https://github.com/typescript-eslint/typescript-eslint/issues/369
+		// '@typescript-eslint/promise-function-async': 'error',
+
 		'@typescript-eslint/restrict-plus-operands': 'error',
 		'@typescript-eslint/require-array-sort-compare': 'error',
 		'@typescript-eslint/type-annotation-spacing': 'error',
