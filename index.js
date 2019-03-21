@@ -191,6 +191,7 @@ module.exports = {
 		'@typescript-eslint/restrict-plus-operands': 'error',
 		'@typescript-eslint/require-array-sort-compare': 'error',
 		'@typescript-eslint/type-annotation-spacing': 'error',
+		'@typescript-eslint/unified-signatures': 'error',
 
 		// TypeScript supports these features
 		'prefer-object-spread': 'error',
