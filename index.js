@@ -182,6 +182,7 @@ module.exports = {
 		'@typescript-eslint/no-var-requires': 'error',
 		'@typescript-eslint/prefer-for-of': 'error',
 		'@typescript-eslint/prefer-function-type': 'error',
+		'@typescript-eslint/prefer-includes': 'error',
 
 		// Disabled as I would like to *enforce* type aliases instead:
 		// https://github.com/typescript-eslint/typescript-eslint/issues/142
