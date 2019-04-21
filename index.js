@@ -135,6 +135,8 @@ module.exports = {
 		// The `ban-types` rule handles this better
 		// '@typescript-eslint/no-explicit-any': 'error',
 
+		'no-extra-parens': 'off',
+		'@typescript-eslint/no-extra-parens.md': 'error',
 		'@typescript-eslint/no-extraneous-class': 'error',
 		'@typescript-eslint/no-for-in-array': 'error',
 		'@typescript-eslint/no-inferrable-types': 'error',
