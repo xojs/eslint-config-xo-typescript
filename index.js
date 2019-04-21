@@ -189,6 +189,7 @@ module.exports = {
 		// '@typescript-eslint/prefer-interface': 'error',
 
 		'@typescript-eslint/prefer-namespace-keyword': 'error',
+		'@typescript-eslint/prefer-string-starts-ends-with': 'error',
 
 		// Disabled because of https://github.com/typescript-eslint/typescript-eslint/issues/369
 		// '@typescript-eslint/promise-function-async': 'error',
