@@ -33,6 +33,7 @@ module.exports = {
 			'error',
 			'array-simple'
 		],
+		'@typescript-eslint/await-thenable': 'error',
 		'@typescript-eslint/ban-types': [
 			'error',
 			{
