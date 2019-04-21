@@ -180,6 +180,7 @@ module.exports = {
 		'no-useless-constructor': 'off',
 		'@typescript-eslint/no-useless-constructor': 'error',
 		'@typescript-eslint/no-var-requires': 'error',
+		'@typescript-eslint/prefer-for-of': 'error',
 		'@typescript-eslint/prefer-function-type': 'error',
 
 		// Disabled as I would like to *enforce* type aliases instead:
