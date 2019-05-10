@@ -91,6 +91,11 @@ module.exports = {
 			'error',
 			'^T$|^[A-Z][a-zA-Z]+$'
 		],
+		'func-call-spacing': 'off',
+		'@typescript-eslint/func-call-spacing': [
+			'error',
+			'never'
+		],
 		indent: 'off',
 		'@typescript-eslint/indent': [
 			'error',
@@ -211,10 +216,11 @@ module.exports = {
 
 		'@typescript-eslint/restrict-plus-operands': 'error',
 		'@typescript-eslint/require-array-sort-compare': 'error',
-
 		semi: 'off',
-		'@typescript-eslint/semi': 'error',
-
+		'@typescript-eslint/semi': [
+			'error',
+			'always'
+		],
 		'@typescript-eslint/type-annotation-spacing': 'error',
 
 		// Disabled as it crashes on most code
