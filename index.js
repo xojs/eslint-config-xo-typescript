@@ -210,6 +210,10 @@ module.exports = {
 
 		'@typescript-eslint/restrict-plus-operands': 'error',
 		'@typescript-eslint/require-array-sort-compare': 'error',
+
+		semi: 'off',
+		'@typescript-eslint/semi': 'error',
+
 		'@typescript-eslint/type-annotation-spacing': 'error',
 
 		// Disabled as it crashes on most code
