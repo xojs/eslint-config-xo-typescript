@@ -231,6 +231,7 @@ module.exports = {
 		// 	}
 		// ],
 
+		'@typescript-eslint/prefer-regexp-exec': 'error',
 		'@typescript-eslint/unified-signatures': 'error',
 
 		// TypeScript supports these features
