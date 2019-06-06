@@ -172,7 +172,10 @@ module.exports = {
 				allowAsParameter: true
 			}
 		],
-		'@typescript-eslint/no-require-imports': 'error',
+
+		// TODO: Enable this again when I target ESM output in all my TypeScript projects
+		// '@typescript-eslint/no-require-imports': 'error',
+
 		'@typescript-eslint/no-this-alias': [
 			'error',
 			{
@@ -201,9 +204,7 @@ module.exports = {
 		],
 		'no-useless-constructor': 'off',
 		'@typescript-eslint/no-useless-constructor': 'error',
-
-		// TODO: Enable this again when I target ESM output in all my TypeScript projects
-		// '@typescript-eslint/no-var-requires': 'error',
+		'@typescript-eslint/no-var-requires': 'error',
 
 		'@typescript-eslint/prefer-for-of': 'error',
 		'@typescript-eslint/prefer-function-type': 'error',
