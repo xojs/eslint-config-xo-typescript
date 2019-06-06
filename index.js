@@ -158,7 +158,9 @@ module.exports = {
 		'@typescript-eslint/no-for-in-array': 'error',
 		'@typescript-eslint/no-inferrable-types': 'error',
 		'@typescript-eslint/no-misused-new': 'error',
-		'@typescript-eslint/no-namespace': 'error',
+
+		// TODO: Enable this again when I target ESM output in all my TypeScript projects
+		// '@typescript-eslint/no-namespace': 'error',
 
 		// Disabled until this is resolved:
 		// https://github.com/typescript-eslint/typescript-eslint/issues/202
@@ -199,7 +201,10 @@ module.exports = {
 		],
 		'no-useless-constructor': 'off',
 		'@typescript-eslint/no-useless-constructor': 'error',
-		'@typescript-eslint/no-var-requires': 'error',
+
+		// TODO: Enable this again when I target ESM output in all my TypeScript projects
+		// '@typescript-eslint/no-var-requires': 'error',
+
 		'@typescript-eslint/prefer-for-of': 'error',
 		'@typescript-eslint/prefer-function-type': 'error',
 		'@typescript-eslint/prefer-includes': 'error',
