@@ -245,6 +245,9 @@ module.exports = {
 
 		// The rule is deprecated in ESLint and it doesn't fully make sense for TypeScript.
 		// TODO: Remove this when the rule is removed from XO.
-		'valid-jsdoc': 'off'
+		'valid-jsdoc': 'off',
+
+		// Disabled because of https://github.com/typescript-eslint/typescript-eslint/issues/60
+		'no-redeclare': 'off'
 	}
 };
