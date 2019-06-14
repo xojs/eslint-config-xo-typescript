@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save-dev eslint-config-xo eslint-config-xo-typescript @typescript-eslint/eslint-plugin
+$ npm install --save-dev eslint-config-xo eslint-config-xo-typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
 
 
@@ -49,7 +49,7 @@ Add some ESLint config to your package.json (or `.eslintrc`):
 ### Use with XO
 
 ```
-$ npm install --save-dev eslint-config-xo-typescript @typescript-eslint/eslint-plugin
+$ npm install --save-dev eslint-config-xo-typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
 
 ```json
