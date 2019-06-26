@@ -216,10 +216,12 @@ module.exports = {
 
 		'@typescript-eslint/prefer-namespace-keyword': 'error',
 		'@typescript-eslint/prefer-string-starts-ends-with': 'error',
-
-		// Disabled because of https://github.com/typescript-eslint/typescript-eslint/issues/369
-		// '@typescript-eslint/promise-function-async': 'error',
-
+		'@typescript-eslint/promise-function-async': [
+			'error',
+			{
+				allowAny: true
+			}
+		],
 		'@typescript-eslint/restrict-plus-operands': 'error',
 		'@typescript-eslint/require-array-sort-compare': 'error',
 		semi: 'off',
