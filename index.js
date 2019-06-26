@@ -80,6 +80,14 @@ module.exports = {
 			}
 		],
 		'@typescript-eslint/class-name-casing': 'error',
+
+		// Disabled because it's not fully usable yet:
+		// https://github.com/typescript-eslint/typescript-eslint/issues/142
+		// '@typescript-eslint/consistent-type-definitions': [
+		// 	'error',
+		// 	'type'
+		// ],
+
 		'@typescript-eslint/explicit-function-return-type': [
 			'error',
 			{
@@ -183,11 +191,6 @@ module.exports = {
 			}
 		],
 		'@typescript-eslint/no-triple-slash-reference': 'error',
-
-		// Disabled as I would like to *enforce* type aliases instead:
-		// https://github.com/typescript-eslint/typescript-eslint/issues/142
-		// '@typescript-eslint/no-type-alias': 'error',
-
 		'@typescript-eslint/no-unnecessary-qualifier': 'error',
 		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
 		'no-unused-vars': 'off',
@@ -205,15 +208,9 @@ module.exports = {
 		'no-useless-constructor': 'off',
 		'@typescript-eslint/no-useless-constructor': 'error',
 		'@typescript-eslint/no-var-requires': 'error',
-
 		'@typescript-eslint/prefer-for-of': 'error',
 		'@typescript-eslint/prefer-function-type': 'error',
 		'@typescript-eslint/prefer-includes': 'error',
-
-		// Disabled as I would like to *enforce* type aliases instead:
-		// https://github.com/typescript-eslint/typescript-eslint/issues/142
-		// '@typescript-eslint/prefer-interface': 'error',
-
 		'@typescript-eslint/prefer-namespace-keyword': 'error',
 		'@typescript-eslint/prefer-string-starts-ends-with': 'error',
 		'@typescript-eslint/promise-function-async': [
