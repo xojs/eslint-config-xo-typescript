@@ -165,6 +165,10 @@ module.exports = {
 		// ],
 
 		'@typescript-eslint/no-extraneous-class': 'error',
+
+		// Disabled because of https://github.com/typescript-eslint/typescript-eslint/issues/647
+		// '@typescript-eslint/no-floating-promises': 'error',
+
 		'@typescript-eslint/no-for-in-array': 'error',
 		'@typescript-eslint/no-inferrable-types': 'error',
 		'@typescript-eslint/no-misused-new': 'error',
