@@ -66,8 +66,10 @@ module.exports = {
 					any: {
 						message: 'Use `unknown` instead.',
 						fixWith: 'unknown'
-					}
+					},
 					// TODO: Enforce `undefined` over `null` here too?
+
+					Omit: 'Prefer the `Except` type in the `type-fest` package instead as it\'s stricter.',
 				}
 			}
 		],
