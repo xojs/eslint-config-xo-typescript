@@ -217,6 +217,7 @@ module.exports = {
 		'@typescript-eslint/prefer-function-type': 'error',
 		'@typescript-eslint/prefer-includes': 'error',
 		'@typescript-eslint/prefer-namespace-keyword': 'error',
+		'@typescript-eslint/prefer-readonly': 'error',
 		'@typescript-eslint/prefer-string-starts-ends-with': 'error',
 		'@typescript-eslint/promise-function-async': [
 			'error',
