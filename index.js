@@ -196,7 +196,6 @@ module.exports = {
 				allowDestructuring: true
 			}
 		],
-		'@typescript-eslint/no-triple-slash-reference': 'error',
 		'@typescript-eslint/no-unnecessary-qualifier': 'error',
 		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
 		'no-unused-vars': 'off',
@@ -231,6 +230,15 @@ module.exports = {
 		'@typescript-eslint/semi': [
 			'error',
 			'always'
+		],
+		'@typescript-eslint/triple-slash-reference': [
+			'error',
+			{
+				path: 'never',
+
+				// Cannot enable this until `@types/node` no longer has the `NodeJS` global
+				// types: 'never'
+			}
 		],
 		'@typescript-eslint/type-annotation-spacing': 'error',
 
