@@ -61,12 +61,6 @@ module.exports = {
 					object: 'Use `{}` instead.',
 					Function: 'Use a specific function type instead, like `() => void`.',
 
-					// This one doesn't seem to be working.
-					// TODO: Report it.
-					any: {
-						message: 'Use `unknown` instead.',
-						fixWith: 'unknown'
-					},
 					// TODO: Enforce `undefined` over `null` here too?
 
 					Omit: 'Prefer the `Except` type in the `type-fest` package instead as it\'s stricter.',
@@ -149,9 +143,13 @@ module.exports = {
 				allowSingleExtends: true
 			}
 		],
-
-		// The `ban-types` rule handles this better
-		// '@typescript-eslint/no-explicit-any': 'error',
+		'@typescript-eslint/no-explicit-any': [
+			'error',
+			{
+				fixToUnknown: true,
+				ignoreRestArgs: true
+			}
+		],
 
 		// Disabled because it's buggy. It transforms `...(personalToken ? {Authorization: `token ${personalToken}`} : {})` into `...personalToken ? {Authorization: `token ${personalToken}`} : {}` which is not valid.
 		// TODO: Report this issue.
