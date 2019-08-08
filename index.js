@@ -172,6 +172,13 @@ module.exports = {
 		'@typescript-eslint/no-for-in-array': 'error',
 		'@typescript-eslint/no-inferrable-types': 'error',
 		'@typescript-eslint/no-misused-new': 'error',
+		'@typescript-eslint/no-misused-promises': [
+			'error',
+			{
+				checksConditionals: true,
+				checksVoidReturn: true,
+			}
+		],
 
 		// TODO: Enable this again when I target ESM output in all my TypeScript projects
 		// '@typescript-eslint/no-namespace': 'error',
