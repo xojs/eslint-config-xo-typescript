@@ -1,6 +1,6 @@
 'use strict';
 module.exports = {
-	parser: '@typescript-eslint/parser',
+	parser: require.resolve('@typescript-eslint/parser'),
 	parserOptions: {
 		sourceType: 'module',
 		jsx: true,
@@ -234,6 +234,8 @@ module.exports = {
 		],
 		'@typescript-eslint/restrict-plus-operands': 'error',
 		'@typescript-eslint/require-array-sort-compare': 'error',
+		'require-await': 'off',
+		'@typescript-eslint/require-await': 'error',
 		semi: 'off',
 		'@typescript-eslint/semi': [
 			'error',
