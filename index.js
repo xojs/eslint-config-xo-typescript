@@ -31,7 +31,9 @@ module.exports = {
 		'@typescript-eslint/adjacent-overload-signatures': 'error',
 		'@typescript-eslint/array-type': [
 			'error',
-			'array-simple'
+			{
+				default: 'array-simple'
+			}
 		],
 		'@typescript-eslint/await-thenable': 'error',
 		'@typescript-eslint/ban-types': [
@@ -76,6 +78,14 @@ module.exports = {
 			}
 		],
 		'@typescript-eslint/class-name-casing': 'error',
+
+		'@typescript-eslint/consistent-type-assertions': [
+			'error',
+			{
+				assertionStyle: 'as',
+				objectLiteralTypeAssertions: 'allow-as-parameter'
+			}
+		],
 
 		// Disabled because it's not fully usable yet:
 		// https://github.com/typescript-eslint/typescript-eslint/issues/142
@@ -132,7 +142,6 @@ module.exports = {
 			}
 		],
 		'@typescript-eslint/member-ordering': 'error',
-		'@typescript-eslint/no-angle-bracket-type-assertion': 'error',
 		'no-array-constructor': 'off',
 		'@typescript-eslint/no-array-constructor': 'error',
 		'no-empty-function': 'off',
@@ -186,13 +195,6 @@ module.exports = {
 		// Disabled until this is resolved:
 		// https://github.com/typescript-eslint/typescript-eslint/issues/202
 		// '@typescript-eslint/no-non-null-assertion': 'error',
-
-		'@typescript-eslint/no-object-literal-type-assertion': [
-			'error',
-			{
-				allowAsParameter: true
-			}
-		],
 
 		// TODO: Enable this again when I target ESM output in all my TypeScript projects
 		// '@typescript-eslint/no-require-imports': 'error',
