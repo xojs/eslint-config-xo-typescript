@@ -31,7 +31,9 @@ module.exports = {
 		'@typescript-eslint/adjacent-overload-signatures': 'error',
 		'@typescript-eslint/array-type': [
 			'error',
-			'array-simple'
+		        {
+				default: 'array-simple'
+		        }
 		],
 		'@typescript-eslint/await-thenable': 'error',
 		'@typescript-eslint/ban-types': [
