@@ -206,6 +206,7 @@ module.exports = {
 			}
 		],
 		'@typescript-eslint/no-unnecessary-qualifier': 'error',
+		'@typescript-eslint/no-unnecessary-type-arguments': 'error',
 		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
 		'no-unused-vars': 'off',
 		'@typescript-eslint/no-unused-vars': [
