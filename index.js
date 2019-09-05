@@ -239,6 +239,11 @@ module.exports = {
 				allowAny: true
 			}
 		],
+		quotes: 'off',
+		'@typescript-eslint/quotes': [
+			'error',
+			'single'
+		],
 		'@typescript-eslint/restrict-plus-operands': 'error',
 		'@typescript-eslint/require-array-sort-compare': 'error',
 		'require-await': 'off',
