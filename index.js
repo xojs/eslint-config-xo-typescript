@@ -152,13 +152,17 @@ module.exports = {
 				allowSingleExtends: true
 			}
 		],
-		'@typescript-eslint/no-explicit-any': [
-			'error',
-			{
-				fixToUnknown: true,
-				ignoreRestArgs: true
-			}
-		],
+
+		// TODO: Try to enable this again in 2021.
+		// Disabled for now. This is a great rule. It's just that TypeScript is not good enough yet to not use `any` in many places.
+		// For example: https://github.com/sindresorhus/refined-github/pull/2391#discussion_r318995182
+		// '@typescript-eslint/no-explicit-any': [
+		// 	'error',
+		// 	{
+		// 		fixToUnknown: true,
+		// 		ignoreRestArgs: true
+		// 	}
+		// ],
 
 		// Disabled because it's buggy. It transforms `...(personalToken ? {Authorization: `token ${personalToken}`} : {})` into `...personalToken ? {Authorization: `token ${personalToken}`} : {}` which is not valid.
 		// TODO: Report this issue.
