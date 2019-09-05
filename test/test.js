@@ -11,7 +11,7 @@ function runEslint(string, config) {
 		configFile: tempWrite.sync(JSON.stringify(config))
 	});
 
-	return linter.executeOnText(string).results[0].messages;
+	return linter.executeOnText(string, '_x.ts').results[0].messages;
 }
 
 test.failing('main', t => {
