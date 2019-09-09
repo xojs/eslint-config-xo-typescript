@@ -69,6 +69,14 @@ module.exports = {
 				}
 			}
 		],
+		'brace-style': 'off',
+		'@typescript-eslint/brace-style': [
+			'error',
+			'1tbs',
+			{
+				allowSingleLine: false
+			}
+		],
 		camelcase: 'off',
 		'@typescript-eslint/camelcase': [
 			'error',
