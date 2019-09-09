@@ -197,7 +197,11 @@ module.exports = {
 			'error',
 			{
 				checksConditionals: true,
-				checksVoidReturn: true,
+
+				// TODO: I really want this to be `true`, but it makes it inconvenient to use
+				// async functions as event handlers... I need to find a good way to handle that.
+				// https://github.com/sindresorhus/refined-github/pull/2391#discussion_r318990466
+				checksVoidReturn: false
 			}
 		],
 
