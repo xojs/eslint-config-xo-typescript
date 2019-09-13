@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-xo-typescript",
-	"version": "0.16.0",
+	"version": "0.18.0",
 	"description": "ESLint shareable config for TypeScript to be used with eslint-config-xo",
 	"license": "MIT",
 	"repository": "xojs/eslint-config-xo-typescript",
@@ -42,15 +42,15 @@
 		"simple"
 	],
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^1.13.0",
-		"@typescript-eslint/parser": "^1.13.0",
-		"ava": "^2.2.0",
-		"eslint": "^6.1.0",
+		"@typescript-eslint/eslint-plugin": "^2.2.0",
+		"@typescript-eslint/parser": "^2.2.0",
+		"ava": "^2.3.0",
+		"eslint": "^6.3.0",
 		"temp-write": "^4.0.0",
-		"typescript": "^3.5.3"
+		"typescript": "^3.6.2"
 	},
 	"peerDependencies": {
-		"@typescript-eslint/eslint-plugin": ">=1.13.0",
+		"@typescript-eslint/eslint-plugin": ">=2.2.0",
 		"eslint": ">=5.16.0",
 		"typescript": ">=3.5.3"
 	}

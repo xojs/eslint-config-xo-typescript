@@ -31,7 +31,9 @@ module.exports = {
 		'@typescript-eslint/adjacent-overload-signatures': 'error',
 		'@typescript-eslint/array-type': [
 			'error',
-			'array-simple'
+			{
+				default: 'array-simple'
+			}
 		],
 		'@typescript-eslint/await-thenable': 'error',
 		'@typescript-eslint/ban-types': [
@@ -67,6 +69,14 @@ module.exports = {
 				}
 			}
 		],
+		'brace-style': 'off',
+		'@typescript-eslint/brace-style': [
+			'error',
+			'1tbs',
+			{
+				allowSingleLine: false
+			}
+		],
 		camelcase: 'off',
 		'@typescript-eslint/camelcase': [
 			'error',
@@ -76,6 +86,14 @@ module.exports = {
 			}
 		],
 		'@typescript-eslint/class-name-casing': 'error',
+
+		'@typescript-eslint/consistent-type-assertions': [
+			'error',
+			{
+				assertionStyle: 'as',
+				objectLiteralTypeAssertions: 'allow-as-parameter'
+			}
+		],
 
 		// Disabled because it's not fully usable yet:
 		// https://github.com/typescript-eslint/typescript-eslint/issues/142
@@ -132,7 +150,6 @@ module.exports = {
 			}
 		],
 		'@typescript-eslint/member-ordering': 'error',
-		'@typescript-eslint/no-angle-bracket-type-assertion': 'error',
 		'no-array-constructor': 'off',
 		'@typescript-eslint/no-array-constructor': 'error',
 		'no-empty-function': 'off',
@@ -143,13 +160,17 @@ module.exports = {
 				allowSingleExtends: true
 			}
 		],
-		'@typescript-eslint/no-explicit-any': [
-			'error',
-			{
-				fixToUnknown: true,
-				ignoreRestArgs: true
-			}
-		],
+
+		// TODO: Try to enable this again in 2021.
+		// Disabled for now. This is a great rule. It's just that TypeScript is not good enough yet to not use `any` in many places.
+		// For example: https://github.com/sindresorhus/refined-github/pull/2391#discussion_r318995182
+		// '@typescript-eslint/no-explicit-any': [
+		// 	'error',
+		// 	{
+		// 		fixToUnknown: true,
+		// 		ignoreRestArgs: true
+		// 	}
+		// ],
 
 		// Disabled because it's buggy. It transforms `...(personalToken ? {Authorization: `token ${personalToken}`} : {})` into `...personalToken ? {Authorization: `token ${personalToken}`} : {}` which is not valid.
 		// TODO: Report this issue.
@@ -176,7 +197,11 @@ module.exports = {
 			'error',
 			{
 				checksConditionals: true,
-				checksVoidReturn: true,
+
+				// TODO: I really want this to be `true`, but it makes it inconvenient to use
+				// async functions as event handlers... I need to find a good way to handle that.
+				// https://github.com/sindresorhus/refined-github/pull/2391#discussion_r318990466
+				checksVoidReturn: false
 			}
 		],
 
@@ -186,13 +211,6 @@ module.exports = {
 		// Disabled until this is resolved:
 		// https://github.com/typescript-eslint/typescript-eslint/issues/202
 		// '@typescript-eslint/no-non-null-assertion': 'error',
-
-		'@typescript-eslint/no-object-literal-type-assertion': [
-			'error',
-			{
-				allowAsParameter: true
-			}
-		],
 
 		// TODO: Enable this again when I target ESM output in all my TypeScript projects
 		// '@typescript-eslint/no-require-imports': 'error',
@@ -204,6 +222,7 @@ module.exports = {
 			}
 		],
 		'@typescript-eslint/no-unnecessary-qualifier': 'error',
+		'@typescript-eslint/no-unnecessary-type-arguments': 'error',
 		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
 		'no-unused-vars': 'off',
 		'@typescript-eslint/no-unused-vars': [
@@ -231,6 +250,11 @@ module.exports = {
 			{
 				allowAny: true
 			}
+		],
+		quotes: 'off',
+		'@typescript-eslint/quotes': [
+			'error',
+			'single'
 		],
 		'@typescript-eslint/restrict-plus-operands': 'error',
 		'@typescript-eslint/require-array-sort-compare': 'error',
