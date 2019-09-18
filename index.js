@@ -265,6 +265,12 @@ module.exports = {
 			'error',
 			'always'
 		],
+		'@typescript-eslint/strict-boolean-expressions': [
+			'error',
+			{
+				allowNullable: true
+			}
+		],
 		'@typescript-eslint/triple-slash-reference': [
 			'error',
 			{
