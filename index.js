@@ -259,8 +259,11 @@ module.exports = {
 		],
 		'@typescript-eslint/restrict-plus-operands': 'error',
 		'@typescript-eslint/require-array-sort-compare': 'error',
-		'require-await': 'off',
-		'@typescript-eslint/require-await': 'error',
+
+		// Disabled for now. It's too buggy. It fails to detect when try/catch is used, await inside blocks, etc. It's also common to have async functions without await for various reasons.
+		// 'require-await': 'off',
+		// '@typescript-eslint/require-await': 'error',
+
 		semi: 'off',
 		'@typescript-eslint/semi': [
 			'error',
