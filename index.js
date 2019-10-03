@@ -103,13 +103,6 @@ module.exports = {
 		// 	'type'
 		// ],
 
-		'@typescript-eslint/explicit-function-return-type': [
-			'error',
-			{
-				allowExpressions: true,
-				allowTypedFunctionExpressions: true
-			}
-		],
 		'@typescript-eslint/generic-type-naming': [
 			'error',
 			'^T$|^[A-Z][a-zA-Z]+$'
@@ -308,5 +301,19 @@ module.exports = {
 
 		// Disabled because of https://github.com/typescript-eslint/typescript-eslint/issues/60
 		'no-redeclare': 'off'
-	}
+	},
+	overrides: [
+		{
+			files: ['*.ts', '*.tsx'],
+			rules: {
+				'@typescript-eslint/explicit-function-return-type': [
+					'error',
+					{
+						allowExpressions: true,
+						allowTypedFunctionExpressions: true
+					}
+				]
+			}
+		}
+	]
 };
