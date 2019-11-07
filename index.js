@@ -222,12 +222,16 @@ module.exports = {
 				allowDestructuring: true
 			}
 		],
-		'@typescript-eslint/no-unnecessary-condition': [
-			'error',
-			{
-				ignoreRhs: true
-			}
-		],
+
+		// TODO: Reconsider enabling this again in 2020.
+		// Disable because it has too many false-positives: https://github.com/typescript-eslint/typescript-eslint/search?q=no-unnecessary-condition+is%3Aissue&state=open&type=Issues
+		// '@typescript-eslint/no-unnecessary-condition': [
+		// 	'error',
+		// 	{
+		// 		ignoreRhs: true
+		// 	}
+		// ],
+
 		'@typescript-eslint/no-unnecessary-qualifier': 'error',
 		'@typescript-eslint/no-unnecessary-type-arguments': 'error',
 		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
