@@ -222,7 +222,12 @@ module.exports = {
 				allowDestructuring: true
 			}
 		],
-		'@typescript-eslint/no-unnecessary-condition': 'error',
+		'@typescript-eslint/no-unnecessary-condition': [
+			'error',
+			{
+				ignoreRhs: true
+			}
+		],
 		'@typescript-eslint/no-unnecessary-qualifier': 'error',
 		'@typescript-eslint/no-unnecessary-type-arguments': 'error',
 		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
