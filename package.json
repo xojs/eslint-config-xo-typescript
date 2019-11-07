@@ -42,16 +42,16 @@
 		"simple"
 	],
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^2.3.0",
-		"@typescript-eslint/parser": "^2.3.0",
+		"@typescript-eslint/eslint-plugin": "^2.6.1",
+		"@typescript-eslint/parser": "^2.6.1",
 		"ava": "^2.4.0",
-		"eslint": "^6.4.0",
+		"eslint": "^6.6.0",
 		"temp-write": "^4.0.0",
-		"typescript": "^3.6.3"
+		"typescript": "^3.7.2"
 	},
 	"peerDependencies": {
-		"@typescript-eslint/eslint-plugin": ">=2.3.0",
-		"eslint": ">=5.16.0",
+		"@typescript-eslint/eslint-plugin": ">=2.6.1",
+		"eslint": ">=6.6.0",
 		"typescript": ">=3.5.3"
 	}
 }
