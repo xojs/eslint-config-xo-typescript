@@ -275,12 +275,17 @@ module.exports = {
 			'error',
 			'always'
 		],
-		'@typescript-eslint/strict-boolean-expressions': [
-			'error',
-			{
-				allowNullable: true
-			}
-		],
+
+		// TODO: Reconsider enabling it again in 2021.
+		// Disabled for now as it's too strict.
+		// Relevant discussion: https://github.com/sindresorhus/refined-github/pull/2521#discussion_r343013852
+		// '@typescript-eslint/strict-boolean-expressions': [
+		// 	'error',
+		// 	{
+		// 		allowNullable: true
+		// 	}
+		// ],
+
 		'@typescript-eslint/triple-slash-reference': [
 			'error',
 			{
