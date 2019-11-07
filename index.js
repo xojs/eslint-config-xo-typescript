@@ -316,7 +316,6 @@ module.exports = {
 		'@typescript-eslint/unified-signatures': 'error',
 
 		// TypeScript supports these features
-		'prefer-object-spread': 'error',
 		'no-useless-catch': 'error',
 
 		// The rule is deprecated in ESLint and it doesn't fully make sense for TypeScript.
