@@ -58,10 +58,13 @@ module.exports = {
 						fixWith: 'symbol'
 					},
 					Object: {
-						message: 'Use `object` instead.',
-						fixWith: 'object'
+						message: 'The `Object` type is mostly the same as `unknown`. You probably want `Record<string, unknown>` instead. See https://github.com/typescript-eslint/typescript-eslint/pull/848',
+						fixWith: 'Record<string, unknown>'
 					},
-					object: 'Use `{}` instead.',
+					object: {
+						message: 'The `object` type is hard to use. Use `Record<string, unknown>` instead. See: https://github.com/typescript-eslint/typescript-eslint/pull/848',
+						fixWith: 'Record<string, unknown>'
+					},
 					Function: 'Use a specific function type instead, like `() => void`.',
 
 					// TODO: Enforce `undefined` over `null` here too?
