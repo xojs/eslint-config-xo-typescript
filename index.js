@@ -320,6 +320,9 @@ module.exports = {
 		'no-redeclare': 'off',
 
 		// Disabled because of https://github.com/typescript-eslint/typescript-eslint/issues/1116
-		'no-undef': 'off'
+		'no-undef': 'off',
+
+		// Disabled because of https://github.com/typescript-eslint/typescript-eslint/issues/1138
+		'no-unused-expressions': 'off'
 	}
 };
