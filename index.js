@@ -283,6 +283,15 @@ module.exports = {
 		// 'require-await': 'off',
 		// '@typescript-eslint/require-await': 'error',
 
+		'space-before-function-paren': 'off',
+		'@typescript-eslint/space-before-function-paren': [
+			'error',
+			{
+				anonymous: 'always',
+				named: 'never',
+				asyncArrow: 'always'
+			}
+		],
 		semi: 'off',
 		'@typescript-eslint/semi': [
 			'error',
