@@ -271,6 +271,12 @@ module.exports = {
 			'single'
 		],
 		'@typescript-eslint/restrict-plus-operands': 'error',
+		'@typescript-eslint/restrict-template-expressions': [
+			'error',
+			{
+				allowNumber: true
+			}
+		],
 		'@typescript-eslint/require-array-sort-compare': 'error',
 
 		// Disabled for now. It's too buggy. It fails to detect when try/catch is used, await inside blocks, etc. It's also common to have async functions without await for various reasons.
