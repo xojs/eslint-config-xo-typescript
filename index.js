@@ -156,6 +156,7 @@ module.exports = {
 		'@typescript-eslint/member-ordering': 'error',
 		'no-array-constructor': 'off',
 		'@typescript-eslint/no-array-constructor': 'error',
+		'@typescript-eslint/no-dynamic-delete': 'error',
 		'no-empty-function': 'off',
 		'@typescript-eslint/no-empty-function': 'error',
 		'@typescript-eslint/no-empty-interface': [
