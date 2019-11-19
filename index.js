@@ -240,6 +240,8 @@ module.exports = {
 		'@typescript-eslint/no-unnecessary-type-arguments': 'error',
 		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
 		'@typescript-eslint/no-untyped-public-signature': 'error',
+		'no-unused-expressions': 'off',
+		'@typescript-eslint/no-unused-expressions': 'error',
 		'no-unused-vars': 'off',
 		'@typescript-eslint/no-unused-vars': [
 			'error',
@@ -344,8 +346,5 @@ module.exports = {
 
 		// Disabled because of https://github.com/typescript-eslint/typescript-eslint/issues/1116
 		'no-undef': 'off',
-
-		// Disabled because of https://github.com/typescript-eslint/typescript-eslint/issues/1138
-		'no-unused-expressions': 'off'
 	}
 };
