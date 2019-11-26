@@ -178,6 +178,8 @@ module.exports = {
 		// 	}
 		// ],
 
+		'@typescript-eslint/no-extra-non-null-assertion': 'error',
+
 		// Disabled because it's buggy. It transforms `...(personalToken ? {Authorization: `token ${personalToken}`} : {})` into `...personalToken ? {Authorization: `token ${personalToken}`} : {}` which is not valid.
 		// TODO: Report this issue.
 		'no-extra-parens': 'off',
