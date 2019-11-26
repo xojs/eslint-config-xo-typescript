@@ -86,6 +86,7 @@ module.exports = {
 			'error',
 			{
 				properties: 'always',
+				genericType: 'always',
 				ignoreDestructuring: false
 			}
 		],
