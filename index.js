@@ -265,6 +265,10 @@ module.exports = {
 				caughtErrorsIgnorePattern: '^_$'
 			}
 		],
+
+		// Disabled for now as it's marked as experimental.
+		// '@typescript-eslint/no-unused-vars-experimental': 'error',
+
 		'no-useless-constructor': 'off',
 		'@typescript-eslint/no-useless-constructor': 'error',
 		'@typescript-eslint/no-var-requires': 'error',
