@@ -116,7 +116,7 @@ module.exports = {
 		],
 		'@typescript-eslint/generic-type-naming': [
 			'error',
-			'^T$|^[A-Z][a-zA-Z]+$'
+			/^T$|^[A-Z][a-zA-Z]+$/.source
 		],
 		'func-call-spacing': 'off',
 		'@typescript-eslint/func-call-spacing': [
@@ -151,7 +151,7 @@ module.exports = {
 		'@typescript-eslint/member-naming': [
 			'error',
 			{
-				private: '^_'
+				private: /^_/.source
 			}
 		],
 		'@typescript-eslint/member-ordering': 'error',
@@ -260,9 +260,9 @@ module.exports = {
 				vars: 'all',
 				args: 'after-used',
 				ignoreRestSiblings: true,
-				argsIgnorePattern: '^_',
+				argsIgnorePattern: /^_/.source,
 				caughtErrors: 'all',
-				caughtErrorsIgnorePattern: '^_$'
+				caughtErrorsIgnorePattern: /^_$/.source
 			}
 		],
 

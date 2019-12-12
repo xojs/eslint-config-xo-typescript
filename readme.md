@@ -2,13 +2,11 @@
 
 > ESLint [shareable config](https://eslint.org/docs/developer-guide/shareable-configs.html) for TypeScript to be used with [eslint-config-xo](https://github.com/xojs/eslint-config-xo)
 
-
 ## Install
 
 ```
 $ npm install --save-dev eslint-config-xo eslint-config-xo-typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
-
 
 ## Usage
 
@@ -43,7 +41,6 @@ Add some ESLint config to your package.json (or `.eslintrc`):
 }
 ```
 
-
 ## Tip
 
 ### Use with XO
@@ -64,13 +61,7 @@ $ npm install --save-dev eslint-config-xo-typescript @typescript-eslint/parser @
 }
 ```
 
-
 ## Related
 
 - [eslint-config-xo](https://github.com/xojs/eslint-config-xo) - ESLint shareable config for XO
 - [XO](https://github.com/xojs/xo)
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
