@@ -197,6 +197,8 @@ module.exports = {
 		// 	}
 		// ],
 
+		'no-extra-semi': 'off',
+		'@typescript-eslint/no-extra-semi': 'error',
 		'@typescript-eslint/no-extraneous-class': [
 			'error',
 			{
