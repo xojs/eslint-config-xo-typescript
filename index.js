@@ -62,7 +62,7 @@ module.exports = {
 						fixWith: 'Record<string, unknown>'
 					},
 					'{}': {
-						message: 'The `Object` type is mostly the same as `unknown`. You probably want `Record<string, unknown>` instead. See https://github.com/typescript-eslint/typescript-eslint/pull/848',
+						message: 'The `{}` type is mostly the same as `unknown`. You probably want `Record<string, unknown>` instead.',
 						fixWith: 'Record<string, unknown>'
 					},
 					object: {
