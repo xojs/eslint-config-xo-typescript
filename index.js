@@ -334,7 +334,8 @@ module.exports = {
 		// '@typescript-eslint/strict-boolean-expressions': [
 		// 	'error',
 		// 	{
-		// 		allowNullable: true
+		// 		allowNullable: true,
+		// 		allowSafe: true
 		// 	}
 		// ],
 
