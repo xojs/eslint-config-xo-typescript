@@ -85,6 +85,8 @@ module.exports = {
 				allowSingleLine: false
 			}
 		],
+		'default-param-last': 'off',
+		'@typescript-eslint/default-param-last': 'error',
 		camelcase: 'off',
 		'@typescript-eslint/camelcase': [
 			'error',
