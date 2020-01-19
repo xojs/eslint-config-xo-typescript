@@ -251,7 +251,8 @@ module.exports = {
 		// '@typescript-eslint/no-unnecessary-condition': [
 		// 	'error',
 		// 	{
-		// 		ignoreRhs: true
+		// 		ignoreRhs: true,
+		// 		checkArrayPredicates: true
 		// 	}
 		// ],
 
