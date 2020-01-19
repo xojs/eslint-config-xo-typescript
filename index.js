@@ -87,17 +87,6 @@ module.exports = {
 		],
 		'default-param-last': 'off',
 		'@typescript-eslint/default-param-last': 'error',
-		camelcase: 'off',
-		'@typescript-eslint/camelcase': [
-			'error',
-			{
-				properties: 'always',
-				genericType: 'always',
-				ignoreDestructuring: false
-			}
-		],
-		'@typescript-eslint/class-name-casing': 'error',
-
 		'@typescript-eslint/consistent-type-assertions': [
 			'error',
 			{
@@ -120,10 +109,6 @@ module.exports = {
 				allowTypedFunctionExpressions: true
 			}
 		],
-		'@typescript-eslint/generic-type-naming': [
-			'error',
-			/^T$|^[A-Z][a-zA-Z]+$/.source
-		],
 		'func-call-spacing': 'off',
 		'@typescript-eslint/func-call-spacing': [
 			'error',
@@ -136,10 +121,6 @@ module.exports = {
 			{
 				SwitchCase: 1
 			}
-		],
-		'@typescript-eslint/interface-name-prefix': [
-			'error',
-			'never'
 		],
 		'@typescript-eslint/member-delimiter-style': [
 			'error',
@@ -154,13 +135,61 @@ module.exports = {
 				}
 			}
 		],
-		'@typescript-eslint/member-naming': [
+		'@typescript-eslint/member-ordering': 'error',
+		// We use `@typescript-eslint/naming-convention` in favor of `camelcase`.
+		camelcase: 'off',
+		// DON't push this until typescript-eslint 2.17 is out. And test it on Got and RG.
+		// TODO: Prevent `_` prefix on private fields when TypeScript 3.8 is out.
+		'@typescript-eslint/naming-convention': [
 			'error',
 			{
-				private: /^_/.source
+				selector: 'default',
+				format: [
+					'strictCamelCase'
+				],
+				leadingUnderscore: 'allow',
+				trailingUnderscore: 'allow'
+			},
+			{
+				selector: 'typeLike',
+				format: [
+					'StrictPascalCase'
+				]
+			},
+			{
+				selector: 'variable',
+				types: [
+					'boolean'
+				],
+				format: [
+					'StrictPascalCase'
+				],
+				prefix: [
+					'is',
+					'has',
+					'can',
+					'should',
+					'will',
+					'did'
+				]
+			},
+			{
+				// Interface name should not be prefixed with `I`.
+				selector: 'interface',
+				filter: /^(?!I)[A-Z]/.source,
+				format: [
+					'StrictPascalCase'
+				]
+			},
+			{
+				// Type parameter name should either be `T` or a descriptive name.
+				selector: 'typeParameter',
+				filter: /^T$|^[A-Z][a-zA-Z]+$/.source,
+				format: [
+					'StrictPascalCase'
+				]
 			}
 		],
-		'@typescript-eslint/member-ordering': 'error',
 		'no-array-constructor': 'off',
 		'@typescript-eslint/no-array-constructor': 'error',
 		'@typescript-eslint/no-dynamic-delete': 'error',
