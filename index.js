@@ -109,6 +109,17 @@ module.exports = {
 				allowTypedFunctionExpressions: true
 			}
 		],
+
+		// Disabled for now as it has too many false-positives.
+		// '@typescript-eslint/explicit-module-boundary-types': [
+		// 	'error',
+		// 	{
+		// 		allowTypedFunctionExpressions: true,
+		// 		allowHigherOrderFunctions: true,
+		// 		allowDirectConstAssertionInArrowFunctions: true
+		// 	}
+		// ],
+
 		'func-call-spacing': 'off',
 		'@typescript-eslint/func-call-spacing': [
 			'error',
@@ -292,7 +303,6 @@ module.exports = {
 		'@typescript-eslint/no-unnecessary-qualifier': 'error',
 		'@typescript-eslint/no-unnecessary-type-arguments': 'error',
 		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
-		'@typescript-eslint/no-untyped-public-signature': 'error',
 		'no-unused-expressions': 'off',
 		'@typescript-eslint/no-unused-expressions': 'error',
 		'no-unused-vars': 'off',
