@@ -85,6 +85,14 @@ module.exports = {
 				allowSingleLine: false
 			}
 		],
+		'comma-spacing': 'off',
+		'@typescript-eslint/comma-spacing': [
+			'error',
+			{
+				before: false,
+				after: true
+			}
+		],
 		'default-param-last': 'off',
 		'@typescript-eslint/default-param-last': 'error',
 		'@typescript-eslint/consistent-type-assertions': [
