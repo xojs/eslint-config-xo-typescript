@@ -17,7 +17,8 @@
 		"test": "ava"
 	},
 	"files": [
-		"index.js"
+		"index.js",
+		"space.js"
 	],
 	"keywords": [
 		"typescript",

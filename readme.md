@@ -24,6 +24,20 @@ Add some ESLint config to your package.json (or `.eslintrc`):
 }
 ```
 
+Use the `space` sub-config if you want 2 space indentation instead of tabs:
+
+```json
+{
+	"name": "my-awesome-project",
+	"eslintConfig": {
+		"extends": [
+			"xo",
+			"xo-typescript/space"
+		]
+	}
+}
+```
+
 *Note:* If your `tsconfig.json` is not in the same directory as `package.json`, you will have to set the path yourself:
 
 ```json
