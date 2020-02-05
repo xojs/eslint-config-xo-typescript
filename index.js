@@ -299,6 +299,7 @@ module.exports = {
 		],
 		'no-throw-literal': 'off',
 		'@typescript-eslint/no-throw-literal': 'error',
+		'@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
 
 		// TODO: Reconsider enabling this again in 2020.
 		// Disable because it has too many false-positives: https://github.com/typescript-eslint/typescript-eslint/search?q=no-unnecessary-condition+is%3Aissue&state=open&type=Issues
