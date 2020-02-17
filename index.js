@@ -71,7 +71,11 @@ module.exports = {
 					},
 					Function: 'Use a specific function type instead, like `() => void`.',
 
-					// TODO: Enforce `undefined` over `null` here too?
+					// TODO: Try to enable this in 2021.
+					// null: {
+					// 	message: 'Use `undefined` instead. See: https://github.com/sindresorhus/meta/issues/7',
+					// 	fixWith: 'undefined'
+					// }
 
 					Omit: 'Prefer the `Except` type in the `type-fest` package instead as it\'s stricter.',
 				}
