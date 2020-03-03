@@ -355,6 +355,12 @@ module.exports = {
 		'@typescript-eslint/prefer-nullish-coalescing': 'error',
 		'@typescript-eslint/prefer-optional-chain': 'error',
 		'@typescript-eslint/prefer-readonly': 'error',
+		'@typescript-eslint/prefer-readonly-parameter-types': [
+			'error',
+			{
+				checkParameterProperties: true
+			}
+		],
 		'@typescript-eslint/prefer-string-starts-ends-with': 'error',
 		'@typescript-eslint/promise-function-async': [
 			'error',
