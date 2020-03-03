@@ -40,6 +40,7 @@ module.exports = {
 		'@typescript-eslint/ban-types': [
 			'error',
 			{
+				extendDefaults: false,
 				types: {
 					String: {
 						message: 'Use `string` instead.',
@@ -219,6 +220,7 @@ module.exports = {
 		// 		]
 		// 	}
 		// ],
+		'@typescript-eslint/no-base-to-string': 'error',
 		'no-array-constructor': 'off',
 		'@typescript-eslint/no-array-constructor': 'error',
 		'no-dupe-class-members': 'off',
