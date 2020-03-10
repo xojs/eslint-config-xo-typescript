@@ -327,6 +327,7 @@ module.exports = {
 		'@typescript-eslint/no-unnecessary-qualifier': 'error',
 		'@typescript-eslint/no-unnecessary-type-arguments': 'error',
 		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
+		'@typescript-eslint/no-unsafe-call': 'error',
 		'no-unused-expressions': 'off',
 		'@typescript-eslint/no-unused-expressions': 'error',
 		'no-unused-vars': 'off',
