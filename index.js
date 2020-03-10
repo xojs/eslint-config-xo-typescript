@@ -118,13 +118,14 @@ module.exports = {
 		// 	'type'
 		// ],
 
-		'@typescript-eslint/explicit-function-return-type': [
-			'error',
-			{
-				allowExpressions: true,
-				allowTypedFunctionExpressions: true
-			}
-		],
+		// Disabled because it's too annoying. Enable it when it's more mature, smarter, and more flexible.
+		// '@typescript-eslint/explicit-function-return-type': [
+		// 	'error',
+		// 	{
+		// 		allowExpressions: true,
+		// 		allowTypedFunctionExpressions: true
+		// 	}
+		// ],
 
 		// Disabled for now as it has too many false-positives.
 		// '@typescript-eslint/explicit-module-boundary-types': [
