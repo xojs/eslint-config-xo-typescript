@@ -78,9 +78,13 @@ module.exports = {
 					// 	fixWith: 'undefined'
 					// }
 
-					Omit: 'Prefer the `Except` type in the `type-fest` package instead as it\'s stricter.',
+					Omit: 'Prefer the `Except` type in the `type-fest` package instead as it\'s stricter.'
 				}
 			}
+		],
+		'@typescript-eslint/class-literal-property-style': [
+			'error',
+			'getters'
 		],
 		'brace-style': 'off',
 		'@typescript-eslint/brace-style': [
