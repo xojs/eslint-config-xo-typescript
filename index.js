@@ -168,6 +168,7 @@ module.exports = {
 			}
 		],
 		'@typescript-eslint/member-ordering': 'error',
+		'@typescript-eslint/method-signature-style': 'error',
 		// We use `@typescript-eslint/naming-convention` in favor of `camelcase`.
 		camelcase: 'off',
 		// TODO: Enable this again when the following is fixed:
