@@ -94,17 +94,14 @@ module.exports = {
 				allowSingleLine: false
 			}
 		],
-
-		// Disabled for now. It crashes when run on the Caprine codebase.
-		// 'comma-spacing': 'off',
-		// '@typescript-eslint/comma-spacing': [
-		// 	'error',
-		// 	{
-		// 		before: false,
-		// 		after: true
-		// 	}
-		// ],
-
+		'comma-spacing': 'off',
+		'@typescript-eslint/comma-spacing': [
+			'error',
+			{
+				before: false,
+				after: true
+			}
+		],
 		'default-param-last': 'off',
 		'@typescript-eslint/default-param-last': 'error',
 		'@typescript-eslint/consistent-type-assertions': [
@@ -115,29 +112,33 @@ module.exports = {
 			}
 		],
 
-		// Disabled because it's not fully usable yet:
-		// https://github.com/typescript-eslint/typescript-eslint/issues/142
+		// This rule is fine. I just don't want to deal with the churn yet. Enable this in 2022.
 		// '@typescript-eslint/consistent-type-definitions': [
 		// 	'error',
 		// 	'type'
 		// ],
 
 		// Disabled because it's too annoying. Enable it when it's more mature, smarter, and more flexible.
+		// https://github.com/typescript-eslint/typescript-eslint/search?q=%22explicit-function-return-type%22&state=open&type=Issues
 		// '@typescript-eslint/explicit-function-return-type': [
 		// 	'error',
 		// 	{
 		// 		allowExpressions: true,
-		// 		allowTypedFunctionExpressions: true
+		// 		allowTypedFunctionExpressions: true,
+		// 		allowHigherOrderFunctions: true,
+		// 		allowConciseArrowFunctionExpressionsStartingWithVoid: false
 		// 	}
 		// ],
 
 		// Disabled for now as it has too many false-positives.
+		// https://github.com/typescript-eslint/typescript-eslint/search?q=%22explicit-module-boundary-types%22&state=open&type=Issues
 		// '@typescript-eslint/explicit-module-boundary-types': [
 		// 	'error',
 		// 	{
 		// 		allowTypedFunctionExpressions: true,
 		// 		allowHigherOrderFunctions: true,
-		// 		allowDirectConstAssertionInArrowFunctions: true
+		// 		allowDirectConstAssertionInArrowFunctions: true,
+		// 		shouldTrackReferences: true
 		// 	}
 		// ],
 
@@ -255,7 +256,7 @@ module.exports = {
 		'@typescript-eslint/no-extra-non-null-assertion': 'error',
 
 		// Disabled because it's buggy. It transforms `...(personalToken ? {Authorization: `token ${personalToken}`} : {})` into `...personalToken ? {Authorization: `token ${personalToken}`} : {}` which is not valid.
-		// TODO: Report this issue.
+		// https://github.com/typescript-eslint/typescript-eslint/search?q=%22no-extra-parens%22&state=open&type=Issues
 		'no-extra-parens': 'off',
 		// '@typescript-eslint/no-extra-parens': [
 		// 	'error',
@@ -434,7 +435,8 @@ module.exports = {
 		],
 		'@typescript-eslint/type-annotation-spacing': 'error',
 
-		// Disabled as it crashes on most code
+		// Disabled as it crashes on most code.
+		// https://github.com/typescript-eslint/typescript-eslint/search?q=%22unbound-method%22&state=open&type=Issues
 		// '@typescript-eslint/unbound-method': [
 		// 	'error',
 		// 	{
@@ -448,11 +450,7 @@ module.exports = {
 		// TypeScript supports these features
 		'no-useless-catch': 'error',
 
-		// The rule is deprecated in ESLint and it doesn't fully make sense for TypeScript.
-		// TODO: Remove this when the rule is removed from XO.
-		'valid-jsdoc': 'off',
-
 		// Disabled because of https://github.com/typescript-eslint/typescript-eslint/issues/60
-		'no-redeclare': 'off',
+		'no-redeclare': 'off'
 	}
 };
