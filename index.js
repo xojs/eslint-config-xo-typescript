@@ -155,6 +155,8 @@ module.exports = {
 				SwitchCase: 1
 			}
 		],
+		'keyword-spacing': 'off',
+		'@typescript-eslint/keyword-spacing': 'error',
 		'@typescript-eslint/member-delimiter-style': [
 			'error',
 			{
