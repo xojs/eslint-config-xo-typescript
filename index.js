@@ -104,6 +104,8 @@ module.exports = {
 		],
 		'default-param-last': 'off',
 		'@typescript-eslint/default-param-last': 'error',
+		'dot-notation': 'off',
+		'@typescript-eslint/dot-notation': 'error',
 		'@typescript-eslint/consistent-type-assertions': [
 			'error',
 			{
@@ -289,6 +291,7 @@ module.exports = {
 		],
 		'@typescript-eslint/no-for-in-array': 'error',
 		'@typescript-eslint/no-inferrable-types': 'error',
+		'@typescript-eslint/no-invalid-void-type': 'error',
 		'@typescript-eslint/no-misused-new': 'error',
 		'@typescript-eslint/no-misused-promises': [
 			'error',
