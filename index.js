@@ -373,12 +373,15 @@ module.exports = {
 		'@typescript-eslint/prefer-nullish-coalescing': 'error',
 		'@typescript-eslint/prefer-optional-chain': 'error',
 		'@typescript-eslint/prefer-readonly': 'error',
-		'@typescript-eslint/prefer-readonly-parameter-types': [
-			'error',
-			{
-				checkParameterProperties: true
-			}
-		],
+
+		// Disabled until https://github.com/typescript-eslint/typescript-eslint/issues/1758 is fixed. Currently, it's too difficult to accept `Map` as a parameter.
+		// '@typescript-eslint/prefer-readonly-parameter-types': [
+		// 	'error',
+		// 	{
+		// 		checkParameterProperties: true
+		// 	}
+		// ],
+
 		'@typescript-eslint/prefer-reduce-type-parameter': 'error',
 		'@typescript-eslint/prefer-string-starts-ends-with': 'error',
 		'@typescript-eslint/prefer-ts-expect-error': 'error',
