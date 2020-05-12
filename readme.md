@@ -8,7 +8,11 @@
 $ npm install --save-dev eslint-config-xo eslint-config-xo-typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
 
-## Usage
+## Usage with XO
+
+[XO has built-in support for TypeScript](https://github.com/xojs/xo#typescript), by using this module under the hood by default, so you do not have to configure anything.
+
+## Standalone Usage
 
 Add some ESLint config to your package.json (or `.eslintrc`):
 
@@ -51,26 +55,6 @@ Use the `space` sub-config if you want 2 space indentation instead of tabs:
 		"parserOptions": {
 			"project": "some-path/tsconfig.json"
 		}
-	}
-}
-```
-
-## Tip
-
-### Use with XO
-
-```
-$ npm install --save-dev eslint-config-xo-typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
-```
-
-```json
-{
-	"name": "my-awesome-project",
-	"xo": {
-		"extends": "xo-typescript",
-		"extensions": [
-			"ts"
-		]
 	}
 }
 ```
