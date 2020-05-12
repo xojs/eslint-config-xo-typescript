@@ -10,7 +10,7 @@ $ npm install --save-dev eslint-config-xo eslint-config-xo-typescript @typescrip
 
 ## Usage with XO
 
-[XO has built-in support for TypeScript](https://github.com/xojs/xo#typescript), by using this module under the hood by default, so you do not have to configure anything.
+[XO has built-in support for TypeScript](https://github.com/xojs/xo#typescript), using this package under the hood, so you do not have to configure anything.
 
 ## Standalone Usage
 
