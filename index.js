@@ -159,6 +159,16 @@ module.exports = {
 		],
 		'keyword-spacing': 'off',
 		'@typescript-eslint/keyword-spacing': 'error',
+		'lines-between-class-members': 'off',
+		'@typescript-eslint/lines-between-class-members': [
+			'error',
+			'always',
+			{
+				// Workaround to allow class fields to not have lines between them.
+				// TODO: Get ESLint to add an option to ignore class fields.
+				exceptAfterSingleLine: true
+			}
+		],
 		'@typescript-eslint/member-delimiter-style': [
 			'error',
 			{
