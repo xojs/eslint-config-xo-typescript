@@ -336,17 +336,8 @@ module.exports = {
 		'no-throw-literal': 'off',
 		'@typescript-eslint/no-throw-literal': 'error',
 		'@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
-
-		// TODO: Reconsider enabling this again in 2020.
-		// Disable because it has too many false-positives: https://github.com/typescript-eslint/typescript-eslint/search?q=no-unnecessary-condition+is%3Aissue&state=open&type=Issues
-		// '@typescript-eslint/no-unnecessary-condition': [
-		// 	'error',
-		// 	{
-		// 		ignoreRhs: true,
-		// 		checkArrayPredicates: true
-		// 	}
-		// ],
-
+		'no-constant-condition': 'off', // `no-unnecessary-condition` is essentially a stricter version of `no-constant-condition`.
+		'@typescript-eslint/no-unnecessary-condition': 'error',
 		'@typescript-eslint/no-unnecessary-qualifier': 'error',
 		'@typescript-eslint/no-unnecessary-type-arguments': 'error',
 		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
@@ -439,6 +430,7 @@ module.exports = {
 		],
 
 		// TODO: Reconsider enabling it again in 2021.
+		// NOTE: The rule was complete redone in typescript-eslint v3, so this config needs to be changed before this is enabled.
 		// Disabled for now as it's too strict.
 		// Relevant discussion: https://github.com/sindresorhus/refined-github/pull/2521#discussion_r343013852
 		// '@typescript-eslint/strict-boolean-expressions': [
