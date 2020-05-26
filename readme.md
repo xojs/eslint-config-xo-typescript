@@ -1,4 +1,4 @@
-# eslint-config-xo-typescript [![Build Status](https://travis-ci.org/xojs/eslint-config-xo-typescript.svg?branch=master)](https://travis-ci.org/xojs/eslint-config-xo-typescript)
+# eslint-config-xo-typescript [![Build Status](https://travis-ci.com/xojs/eslint-config-xo-typescript.svg?branch=master)](https://travis-ci.com/github/xojs/eslint-config-xo-typescript)
 
 > ESLint [shareable config](https://eslint.org/docs/developer-guide/shareable-configs.html) for TypeScript to be used with [eslint-config-xo](https://github.com/xojs/eslint-config-xo)
 
