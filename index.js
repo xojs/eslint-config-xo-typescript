@@ -294,9 +294,16 @@ module.exports = {
 				allowWithDecorator: true
 			}
 		],
+		'no-void': [
+			'error',
+			{
+				allowAsStatement: true // To allow `ignoreVoid` in `@typescript-eslint/no-floating-promises`
+			}
+		],
 		'@typescript-eslint/no-floating-promises': [
 			'error',
 			{
+				ignoreVoid: true, // Prepend a function call with `void` to mark it as not needing to be await'ed, which silences this rule.
 				ignoreIIFE: true
 			}
 		],
