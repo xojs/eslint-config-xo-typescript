@@ -319,7 +319,8 @@ module.exports = {
 		// TODO: Enable this again when I target ESM output in all my TypeScript projects
 		// '@typescript-eslint/no-namespace': 'error',
 
-		'@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
+		// TODO: Try to enable this again in 2021. It's currently a bit buggy, most likely caused by TypeScript itself.
+		// '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
 
 		// Disabled until this is resolved:
 		// https://github.com/typescript-eslint/typescript-eslint/issues/202
