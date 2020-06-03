@@ -267,7 +267,8 @@ module.exports = {
 		// 	}
 		// ],
 
-		'@typescript-eslint/no-extra-non-null-assertion': 'error',
+		// TODO: Try to enable this again in 2021. It's currently a bit buggy, most likely caused by TypeScript itself.
+		// '@typescript-eslint/no-extra-non-null-assertion': 'error',
 
 		// Disabled because it's buggy. It transforms `...(personalToken ? {Authorization: `token ${personalToken}`} : {})` into `...personalToken ? {Authorization: `token ${personalToken}`} : {}` which is not valid.
 		// https://github.com/typescript-eslint/typescript-eslint/search?q=%22no-extra-parens%22&state=open&type=Issues
