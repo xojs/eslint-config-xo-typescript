@@ -37,6 +37,7 @@ module.exports = {
 			}
 		],
 		'@typescript-eslint/await-thenable': 'error',
+		'@typescript-eslint/ban-tslint-comment': 'error',
 		'@typescript-eslint/ban-types': [
 			'error',
 			{
@@ -426,7 +427,12 @@ module.exports = {
 			}
 		],
 		'@typescript-eslint/return-await': 'error',
-		'@typescript-eslint/require-array-sort-compare': 'error',
+		'@typescript-eslint/require-array-sort-compare': [
+			'error',
+			{
+				ignoreStringArrays: true
+			}
+		],
 
 		// Disabled for now. It's too buggy. It fails to detect when try/catch is used, await inside blocks, etc. It's also common to have async functions without await for various reasons.
 		// 'require-await': 'off',
