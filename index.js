@@ -286,6 +286,8 @@ module.exports = {
 
 		'no-extra-semi': 'off',
 		'@typescript-eslint/no-extra-semi': 'error',
+		'no-loss-of-precision': 'off',
+		'@typescript-eslint/no-loss-of-precision': 'error',
 		'@typescript-eslint/no-extraneous-class': [
 			'error',
 			{
