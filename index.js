@@ -312,7 +312,10 @@ module.exports = {
 		],
 		'@typescript-eslint/no-for-in-array': 'error',
 		'@typescript-eslint/no-inferrable-types': 'error',
-		'@typescript-eslint/no-invalid-void-type': 'error',
+
+		// Disabled for now as it has too many false-positives.
+		// '@typescript-eslint/no-invalid-void-type': 'error',
+
 		'@typescript-eslint/no-misused-new': 'error',
 		'@typescript-eslint/no-misused-promises': [
 			'error',
