@@ -133,6 +133,7 @@ module.exports = {
 		// 	}
 		// ],
 
+		// TODO: This rule should be removed if/when we enable `@typescript-eslint/explicit-function-return-type`.
 		// Disabled for now as it has too many false-positives.
 		// https://github.com/typescript-eslint/typescript-eslint/search?q=%22explicit-module-boundary-types%22&state=open&type=Issues
 		// '@typescript-eslint/explicit-module-boundary-types': [
