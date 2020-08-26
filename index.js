@@ -312,6 +312,7 @@ module.exports = {
 			}
 		],
 		'@typescript-eslint/no-for-in-array': 'error',
+		'@typescript-eslint/no-implicit-any-catch': 'error',
 		'@typescript-eslint/no-inferrable-types': 'error',
 
 		// Disabled for now as it has too many false-positives.
