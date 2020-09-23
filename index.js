@@ -95,6 +95,11 @@ module.exports = {
 				allowSingleLine: false
 			}
 		],
+		'comma-dangle': 'off',
+		'@typescript-eslint/comma-dangle': [
+			'error',
+			'never'
+		],
 		'comma-spacing': 'off',
 		'@typescript-eslint/comma-spacing': [
 			'error',
