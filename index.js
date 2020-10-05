@@ -253,6 +253,8 @@ module.exports = {
 		'@typescript-eslint/no-array-constructor': 'error',
 		'no-dupe-class-members': 'off',
 		'@typescript-eslint/no-dupe-class-members': 'error',
+		'no-duplicate-imports': 'off',
+		'@typescript-eslint/no-duplicate-imports': 'error',
 		'@typescript-eslint/no-dynamic-delete': 'error',
 		'no-empty-function': 'off',
 		'@typescript-eslint/no-empty-function': 'error',
