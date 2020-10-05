@@ -87,6 +87,7 @@ module.exports = {
 			'error',
 			'getters'
 		],
+		'@typescript-eslint/consistent-indexed-object-style': 'error',
 		'brace-style': 'off',
 		'@typescript-eslint/brace-style': [
 			'error',
