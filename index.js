@@ -191,11 +191,14 @@ module.exports = {
 			}
 		],
 		'@typescript-eslint/member-ordering': 'error',
-		'@typescript-eslint/method-signature-style': 'error',
+
+		// Disabled for now as it causes too many weird TypeScript issues. I'm not sure whether the problems are caused by bugs in TS or problems in my types.
+		// TODO: Try to re-enable this again in 2022.
+		// '@typescript-eslint/method-signature-style': 'error',
+
 		// We use `@typescript-eslint/naming-convention` in favor of `camelcase`.
 		camelcase: 'off',
 		// TODO: Enable this again when the following is fixed:
-		// - https://github.com/typescript-eslint/typescript-eslint/issues/1483
 		// - https://github.com/typescript-eslint/typescript-eslint/issues/1485
 		// - https://github.com/typescript-eslint/typescript-eslint/issues/1484
 		// TODO: Prevent `_` prefix on private fields when TypeScript 3.8 is out.
@@ -207,7 +210,12 @@ module.exports = {
 		// 			'strictCamelCase'
 		// 		],
 		// 		leadingUnderscore: 'allow',
-		// 		trailingUnderscore: 'allow'
+		// 		trailingUnderscore: 'allow',
+		// 		// Ignore `{'Retry-After': retryAfter}` type properties.
+		// 		filter: {
+		// 			regex: '[- ]',
+		// 			match: false
+		// 		}
 		// 	},
 		// 	{
 		// 		selector: 'typeLike',
