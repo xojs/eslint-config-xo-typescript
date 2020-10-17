@@ -394,18 +394,20 @@ module.exports = {
 
 		'no-unused-expressions': 'off',
 		'@typescript-eslint/no-unused-expressions': 'error',
+
+		// Disabled as the `@typescript-eslint/no-unused-vars` rule is buggy and marks arguments in overloads as unused... For example: https://github.com/sindresorhus/pageres/blob/6785f65efb354da364da858dba4c192891629971/source/index.ts#L109
 		'no-unused-vars': 'off',
-		'@typescript-eslint/no-unused-vars': [
-			'error',
-			{
-				vars: 'all',
-				args: 'after-used',
-				ignoreRestSiblings: true,
-				argsIgnorePattern: /^_/.source,
-				caughtErrors: 'all',
-				caughtErrorsIgnorePattern: /^_$/.source
-			}
-		],
+		// '@typescript-eslint/no-unused-vars': [
+		// 	'error',
+		// 	{
+		// 		vars: 'all',
+		// 		args: 'after-used',
+		// 		ignoreRestSiblings: true,
+		// 		argsIgnorePattern: /^_/.source,
+		// 		caughtErrors: 'all',
+		// 		caughtErrorsIgnorePattern: /^_$/.source
+		// 	}
+		// ],
 
 		// Disabled for now as it's marked as experimental.
 		// '@typescript-eslint/no-unused-vars-experimental': 'error',
@@ -520,5 +522,15 @@ module.exports = {
 
 		// Disabled because of https://github.com/typescript-eslint/typescript-eslint/issues/60
 		'no-redeclare': 'off'
-	}
+	},
+	overrides: [
+		{
+			files: [
+				'**/*.d.ts'
+			],
+			rules: {
+				'@typescript-eslint/no-unused-vars': 'off'
+			}
+		}
+	]
 };
