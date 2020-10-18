@@ -517,11 +517,11 @@ module.exports = {
 		'@typescript-eslint/prefer-regexp-exec': 'error',
 		'@typescript-eslint/unified-signatures': 'error',
 
-		// TypeScript supports these features
-		'no-useless-catch': 'error',
-
 		// Disabled because of https://github.com/typescript-eslint/typescript-eslint/issues/60
-		'no-redeclare': 'off'
+		'no-redeclare': 'off',
+
+		// Disabled per typescript-eslint recommendation: https://github.com/typescript-eslint/typescript-eslint/blob/e26e43ffba96f6d46198b22f1c8dd5c814db2652/docs/getting-started/linting/FAQ.md#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
+		'no-undef': 'off'
 	},
 	overrides: [
 		{
