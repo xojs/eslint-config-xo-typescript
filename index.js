@@ -481,6 +481,8 @@ module.exports = {
 				asyncArrow: 'always'
 			}
 		],
+		'space-infix-ops': 'off',
+		'@typescript-eslint/space-infix-ops': 'error',
 		semi: 'off',
 		'@typescript-eslint/semi': [
 			'error',
