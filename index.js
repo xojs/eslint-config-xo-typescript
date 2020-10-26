@@ -390,6 +390,7 @@ module.exports = {
 		'@typescript-eslint/no-unnecessary-qualifier': 'error',
 		'@typescript-eslint/no-unnecessary-type-arguments': 'error',
 		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
+		'@typescript-eslint/no-unnecessary-type-constraint': 'error',
 
 		// TODO: Enable these again when we can use ESM natively in Node.js. These rules cause problems with syntax like `import x = require('x');`
 		// '@typescript-eslint/no-unsafe-assignment': 'error',
