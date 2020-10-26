@@ -79,6 +79,11 @@ module.exports = {
 					// 	fixWith: 'undefined'
 					// }
 
+					'[]': 'Don\'t use the empty array type `[]`. It only allows empty arrays. Use `SomeType[]` instead.',
+					'[[]]': 'Don\'t use `[[]]`. It only allows an array with a single element which is an empty array. Use `SomeType[][]` instead.',
+					'[[[]]]': 'Don\'t use `[[[]]]`. Use `SomeType[][][]` instead.',
+					'[[[[]]]]': 'ur drunk 🤡',
+					'[[[[[]]]]]': '🦄💥',
 					Omit: 'Prefer the `Except` type in the `type-fest` package instead as it\'s stricter.'
 				}
 			}
@@ -429,7 +434,8 @@ module.exports = {
 		// '@typescript-eslint/prefer-readonly-parameter-types': [
 		// 	'error',
 		// 	{
-		// 		checkParameterProperties: true
+		// 		checkParameterProperties: true,
+		// 		ignoreInferredTypes: true
 		// 	}
 		// ],
 
