@@ -44,15 +44,15 @@
 		"simple"
 	],
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^4.6.0",
-		"@typescript-eslint/parser": "^4.6.0",
+		"@typescript-eslint/eslint-plugin": "^4.7.0",
+		"@typescript-eslint/parser": "^4.7.0",
 		"ava": "^2.4.0",
 		"eslint": "^7.8.1",
 		"temp-write": "^4.0.0",
 		"typescript": "^4.0.2"
 	},
 	"peerDependencies": {
-		"@typescript-eslint/eslint-plugin": ">=4.6.0",
+		"@typescript-eslint/eslint-plugin": ">=4.7.0",
 		"eslint": ">=7.8.0",
 		"typescript": ">=3.6.0"
 	}
