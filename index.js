@@ -214,7 +214,8 @@ module.exports = {
 		// 		format: [
 		// 			'strictCamelCase'
 		// 		],
-		// 		leadingUnderscore: 'allow',
+		// 		// We allow double underscope because of GraphQL type names and some React names.
+		// 		leadingUnderscore: 'allowSingleOrDouble',
 		// 		trailingUnderscore: 'allow',
 		// 		// Ignore `{'Retry-After': retryAfter}` type properties.
 		// 		filter: {
@@ -259,6 +260,17 @@ module.exports = {
 		// 		filter: /^T$|^[A-Z][a-zA-Z]+$/.source,
 		// 		format: [
 		// 			'StrictPascalCase'
+		// 		]
+		// 	},
+		// 	// Allow these in non-camel-case when quoted.
+		// 	{
+		// 		selector: [
+		// 			'classProperty',
+		// 			'objectLiteralProperty'
+		// 		],
+		// 		format: null,
+		// 		modifiers: [
+		// 			'requiresQuotes'
 		// 		]
 		// 	}
 		// ],
