@@ -433,6 +433,11 @@ module.exports = {
 
 		'no-useless-constructor': 'off',
 		'@typescript-eslint/no-useless-constructor': 'error',
+		'object-curly-spacing': 'off',
+		'@typescript-eslint/object-curly-spacing': [
+			'error',
+			'never'
+		],
 		'@typescript-eslint/no-var-requires': 'error',
 		'@typescript-eslint/non-nullable-type-assertion-style': 'error',
 		'@typescript-eslint/prefer-as-const': 'error',
