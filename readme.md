@@ -8,7 +8,7 @@
 $ npm install --save-dev eslint-config-xo eslint-config-xo-typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
 
-## Usage with XO
+## Use with XO
 
 [XO has built-in support for TypeScript](https://github.com/xojs/xo#typescript), using this package under the hood, so you do not have to configure anything.
 
