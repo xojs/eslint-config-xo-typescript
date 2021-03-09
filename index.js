@@ -292,7 +292,7 @@ module.exports = {
 			}
 		],
 
-		// TODO: Try to enable this again in 2021.
+		// TODO: Try to enable this again in 2022.
 		// Disabled for now. This is a great rule. It's just that TypeScript is not good enough yet to not use `any` in many places.
 		// For example: https://github.com/sindresorhus/refined-github/pull/2391#discussion_r318995182
 		// '@typescript-eslint/no-explicit-any': [
@@ -303,8 +303,7 @@ module.exports = {
 		// 	}
 		// ],
 
-		// TODO: Try to enable this again in 2021. It's currently a bit buggy, most likely caused by TypeScript itself.
-		// '@typescript-eslint/no-extra-non-null-assertion': 'error',
+		'@typescript-eslint/no-extra-non-null-assertion': 'error',
 
 		// Disabled because it's buggy. It transforms `...(personalToken ? {Authorization: `token ${personalToken}`} : {})` into `...personalToken ? {Authorization: `token ${personalToken}`} : {}` which is not valid.
 		// https://github.com/typescript-eslint/typescript-eslint/search?q=%22no-extra-parens%22&state=open&type=Issues
@@ -370,12 +369,8 @@ module.exports = {
 		// TODO: Enable this again when I target ESM output in all my TypeScript projects
 		// '@typescript-eslint/no-namespace': 'error',
 
-		// TODO: Try to enable this again in 2021. It's currently a bit buggy, most likely caused by TypeScript itself.
-		// '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
-
-		// Disabled until this is resolved:
-		// https://github.com/typescript-eslint/typescript-eslint/issues/202
-		// '@typescript-eslint/no-non-null-assertion': 'error',
+		'@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
+		'@typescript-eslint/no-non-null-assertion': 'error',
 
 		// TODO: Enable this again when I target ESM output in all my TypeScript projects
 		// '@typescript-eslint/no-require-imports': 'error',
@@ -413,24 +408,18 @@ module.exports = {
 
 		'no-unused-expressions': 'off',
 		'@typescript-eslint/no-unused-expressions': 'error',
-
-		// Disabled as the `@typescript-eslint/no-unused-vars` rule is buggy and marks arguments in overloads as unused... For example: https://github.com/sindresorhus/pageres/blob/6785f65efb354da364da858dba4c192891629971/source/index.ts#L109
 		'no-unused-vars': 'off',
-		// '@typescript-eslint/no-unused-vars': [
-		// 	'error',
-		// 	{
-		// 		vars: 'all',
-		// 		args: 'after-used',
-		// 		ignoreRestSiblings: true,
-		// 		argsIgnorePattern: /^_/.source,
-		// 		caughtErrors: 'all',
-		// 		caughtErrorsIgnorePattern: /^_$/.source
-		// 	}
-		// ],
-
-		// Disabled for now as it's marked as experimental.
-		// '@typescript-eslint/no-unused-vars-experimental': 'error',
-
+		'@typescript-eslint/no-unused-vars': [
+			'error',
+			{
+				vars: 'all',
+				args: 'after-used',
+				ignoreRestSiblings: true,
+				argsIgnorePattern: /^_/.source,
+				caughtErrors: 'all',
+				caughtErrorsIgnorePattern: /^_$/.source
+			}
+		],
 		'no-useless-constructor': 'off',
 		'@typescript-eslint/no-useless-constructor': 'error',
 		'object-curly-spacing': 'off',
@@ -544,9 +533,6 @@ module.exports = {
 
 		'@typescript-eslint/prefer-regexp-exec': 'error',
 		'@typescript-eslint/unified-signatures': 'error',
-
-		// Disabled because of https://github.com/typescript-eslint/typescript-eslint/issues/60
-		'no-redeclare': 'off',
 
 		// Disabled per typescript-eslint recommendation: https://github.com/typescript-eslint/typescript-eslint/blob/e26e43ffba96f6d46198b22f1c8dd5c814db2652/docs/getting-started/linting/FAQ.md#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
 		'no-undef': 'off'
