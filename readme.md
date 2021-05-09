@@ -2,6 +2,8 @@
 
 > ESLint [shareable config](https://eslint.org/docs/developer-guide/shareable-configs.html) for TypeScript to be used with [eslint-config-xo](https://github.com/xojs/eslint-config-xo)
 
+**This config assumes your project is [ESM](https://nodejs.org/api/esm.html).**
+
 ## Install
 
 ```

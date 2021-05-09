@@ -365,18 +365,12 @@ module.exports = {
 				checksVoidReturn: false
 			}
 		],
-
-		// TODO: Enable this again when I target ESM output in all my TypeScript projects
-		// '@typescript-eslint/no-namespace': 'error',
-
+		'@typescript-eslint/no-namespace': 'error',
 		'@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
 		'@typescript-eslint/no-non-null-assertion': 'error',
 		'no-redeclare': 'off',
 		'@typescript-eslint/no-redeclare': 'error',
-
-		// TODO: Enable this again when I target ESM output in all my TypeScript projects
-		// '@typescript-eslint/no-require-imports': 'error',
-
+		'@typescript-eslint/no-require-imports': 'error',
 		'@typescript-eslint/no-this-alias': [
 			'error',
 			{
@@ -402,13 +396,10 @@ module.exports = {
 		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
 		'@typescript-eslint/no-unnecessary-type-constraint': 'error',
 		'@typescript-eslint/no-unsafe-argument': 'error',
-
-		// TODO: Enable these again when we can use ESM natively in Node.js. These rules cause problems with syntax like `import x = require('x');`
-		// '@typescript-eslint/no-unsafe-assignment': 'error',
-		// '@typescript-eslint/no-unsafe-call': 'error',
-		// '@typescript-eslint/no-unsafe-member-access': 'error',
-		// '@typescript-eslint/no-unsafe-return': 'error',
-
+		'@typescript-eslint/no-unsafe-assignment': 'error',
+		'@typescript-eslint/no-unsafe-call': 'error',
+		'@typescript-eslint/no-unsafe-member-access': 'error',
+		'@typescript-eslint/no-unsafe-return': 'error',
 		'no-unused-expressions': 'off',
 		'@typescript-eslint/no-unused-expressions': 'error',
 		'no-unused-vars': 'off',
@@ -518,9 +509,8 @@ module.exports = {
 			'error',
 			{
 				path: 'never',
-
-				// Cannot enable this until `@types/node` no longer has the `NodeJS` global
-				// types: 'never'
+				types: 'never',
+				lib: 'never'
 			}
 		],
 		'@typescript-eslint/type-annotation-spacing': 'error',
