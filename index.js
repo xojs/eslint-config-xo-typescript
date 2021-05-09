@@ -538,6 +538,14 @@ module.exports = {
 			rules: {
 				'@typescript-eslint/no-unused-vars': 'off'
 			}
+		},
+		{
+			files: [
+				'**/*.test-d.ts'
+			],
+			rules: {
+				'@typescript-eslint/no-unsafe-call': 'off'
+			}
 		}
 	]
 };
