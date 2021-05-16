@@ -367,7 +367,11 @@ module.exports = {
 		],
 		'@typescript-eslint/no-namespace': 'error',
 		'@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
-		'@typescript-eslint/no-non-null-assertion': 'error',
+
+		// Disabled for now. There are just too many places where you need to use it because of incorrect types, for example, the Node.js types.
+		// TODO: Try to enable this again in 2023.
+		// '@typescript-eslint/no-non-null-assertion': 'error',
+
 		'no-redeclare': 'off',
 		'@typescript-eslint/no-redeclare': 'error',
 		'@typescript-eslint/no-require-imports': 'error',
@@ -395,7 +399,11 @@ module.exports = {
 		'@typescript-eslint/no-unnecessary-type-arguments': 'error',
 		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
 		'@typescript-eslint/no-unnecessary-type-constraint': 'error',
-		'@typescript-eslint/no-unsafe-argument': 'error',
+
+		// Disabled for now. When using try/catch, the error is by default `any` and if you pass the error anywhere, it will trigger this rule. This is a very common occurence.
+		// TODO: Enable this rule when TypeScript has more strongly typed errors, probably 2023 at the earliest.
+		// '@typescript-eslint/no-unsafe-argument': 'error',
+
 		'@typescript-eslint/no-unsafe-assignment': 'error',
 		'@typescript-eslint/no-unsafe-call': 'error',
 		'@typescript-eslint/no-unsafe-member-access': 'error',
