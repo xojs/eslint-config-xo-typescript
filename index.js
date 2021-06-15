@@ -104,7 +104,7 @@ module.exports = {
 		'comma-dangle': 'off',
 		'@typescript-eslint/comma-dangle': [
 			'error',
-			'never'
+			'always-multiline'
 		],
 		'comma-spacing': 'off',
 		'@typescript-eslint/comma-spacing': [
