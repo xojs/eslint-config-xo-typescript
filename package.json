@@ -44,18 +44,18 @@
 		"simple"
 	],
 	"dependencies": {
-		"typescript": ">=4"
+		"typescript": ">=4.3"
 	},
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^4.21.0",
-		"@typescript-eslint/parser": "^4.22.1",
+		"@typescript-eslint/eslint-plugin": "^4.28.1",
+		"@typescript-eslint/parser": "^4.28.1",
 		"ava": "^2.4.0",
 		"eslint": "^7.8.1",
 		"temp-write": "^4.0.0"
 	},
 	"peerDependencies": {
-		"@typescript-eslint/eslint-plugin": ">=4.22.1",
-		"eslint": ">=7.26.0",
-		"typescript": ">=4"
+		"@typescript-eslint/eslint-plugin": ">=4.28.1",
+		"eslint": ">=7.30.0",
+		"typescript": ">=4.3"
 	}
 }
