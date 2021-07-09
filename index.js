@@ -37,6 +37,13 @@ module.exports = {
 			}
 		],
 		'@typescript-eslint/await-thenable': 'error',
+		'@typescript-eslint/ban-ts-comment': [
+			'error',
+			{
+				'ts-expect-error': 'allow-with-description',
+				minimumDescriptionLength: 4
+			}
+		],
 		'@typescript-eslint/ban-tslint-comment': 'error',
 		'@typescript-eslint/ban-types': [
 			'error',
