@@ -555,7 +555,8 @@ module.exports = {
 				'**/*.test-d.ts'
 			],
 			rules: {
-				'@typescript-eslint/no-unsafe-call': 'off'
+				'@typescript-eslint/no-unsafe-call': 'off',
+				'@typescript-eslint/no-confusing-void-expression': 'off' // Conflicts with `expectError` assertion.
 			}
 		}
 	]
