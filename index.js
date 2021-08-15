@@ -416,7 +416,10 @@ module.exports = {
 
 		'@typescript-eslint/no-unsafe-assignment': 'error',
 		'@typescript-eslint/no-unsafe-call': 'error',
-		'@typescript-eslint/no-unsafe-member-access': 'error',
+
+		// Disabled until TypeScrpt supports the `node:` protocol.
+		// '@typescript-eslint/no-unsafe-member-access': 'error',
+
 		'@typescript-eslint/no-unsafe-return': 'error',
 		'no-unused-expressions': 'off',
 		'@typescript-eslint/no-unused-expressions': 'error',
