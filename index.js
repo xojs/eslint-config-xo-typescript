@@ -202,7 +202,71 @@ module.exports = {
 				}
 			}
 		],
-		'@typescript-eslint/member-ordering': 'error',
+		'@typescript-eslint/member-ordering': [
+			'error',
+			{
+				'default': [
+					'signature',
+
+					'public-static-field',
+					'public-static-method',
+
+					'protected-static-field',
+					'protected-static-method',
+
+					'private-static-field',
+					'private-static-method',
+
+					'static-field',
+					'static-method',
+
+					'public-decorated-field',
+					'public-instance-field',
+					'public-abstract-field',
+					'public-field',
+
+					'protected-decorated-field',
+					'protected-instance-field',
+					'protected-abstract-field',
+					'protected-field',
+
+					'private-decorated-field',
+					'private-instance-field',
+					'private-abstract-field',
+					'private-field',
+
+					'instance-field',
+					'abstract-field',
+					'decorated-field',
+					'field',
+
+					'public-constructor',
+					'protected-constructor',
+					'private-constructor',
+					'constructor',
+
+					'public-decorated-method',
+					'public-instance-method',
+					'public-abstract-method',
+					'public-method',
+
+					'protected-decorated-method',
+					'protected-instance-method',
+					'protected-abstract-method',
+					'protected-method',
+
+					'private-decorated-method',
+					'private-instance-method',
+					'private-abstract-method',
+					'private-method',
+
+					'instance-method',
+					'abstract-method',
+					'decorated-method',
+					'method'
+				]
+			}
+		],
 
 		// Disabled for now as it causes too many weird TypeScript issues. I'm not sure whether the problems are caused by bugs in TS or problems in my types.
 		// TODO: Try to re-enable this again in 2022.
@@ -393,7 +457,7 @@ module.exports = {
 		'@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
 
 		// `no-unnecessary-condition` is essentially a stricter version of `no-constant-condition`, but that isn't currently enabled
-		'no-constant-condition': 'error', 
+		'no-constant-condition': 'error',
 
 		// TODO: Try to enable this again in 2023 *if* the following are resolved:
 		// - https://github.com/microsoft/TypeScript/issues/13778 (otherwise, it will report on if checks for elements extracted from array)
