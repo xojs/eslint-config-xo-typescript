@@ -391,7 +391,9 @@ module.exports = {
 		'no-throw-literal': 'off',
 		'@typescript-eslint/no-throw-literal': 'error',
 		'@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
-		'no-constant-condition': 'off', // `no-unnecessary-condition` is essentially a stricter version of `no-constant-condition`.
+
+		// `no-unnecessary-condition` is essentially a stricter version of `no-constant-condition`, but that isn't currently enabled
+		'no-constant-condition': 'error', 
 
 		// TODO: Try to enable this again in 2023 *if* the following are resolved:
 		// - https://github.com/microsoft/TypeScript/issues/13778 (otherwise, it will report on if checks for elements extracted from array)
@@ -400,6 +402,7 @@ module.exports = {
 		// - Run the rule on https://github.com/sindresorhus/refined-github and ensure there are no false-positives
 		//
 		// Also related: https://github.com/typescript-eslint/typescript-eslint/issues/1798
+		// Also disable `no-constant-condition` when this is enabled
 		// '@typescript-eslint/no-unnecessary-condition': 'error',
 
 		'@typescript-eslint/no-unnecessary-qualifier': 'error',
