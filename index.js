@@ -507,6 +507,15 @@ module.exports = {
 			'error',
 			'never'
 		],
+		'padding-line-between-statements': 'off',
+		'@typescript-eslint/padding-line-between-statements': [
+			'error',
+			{
+				blankLine: 'always',
+				prev: 'multiline-block-like',
+				next: '*'
+			}
+		],
 		'@typescript-eslint/no-var-requires': 'error',
 		'@typescript-eslint/non-nullable-type-assertion-style': 'error',
 		'@typescript-eslint/prefer-as-const': 'error',
