@@ -424,6 +424,7 @@ module.exports = {
 		// Disabled for now as it has too many false-positives.
 		// '@typescript-eslint/no-invalid-void-type': 'error',
 
+		'@typescript-eslint/no-meaningless-void-operator': 'error',
 		'@typescript-eslint/no-misused-new': 'error',
 		'@typescript-eslint/no-misused-promises': [
 			'error',
