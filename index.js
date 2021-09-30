@@ -438,6 +438,7 @@ module.exports = {
 			}
 		],
 		'@typescript-eslint/no-namespace': 'error',
+		'@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
 		'@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
 
 		// Disabled for now. There are just too many places where you need to use it because of incorrect types, for example, the Node.js types.
