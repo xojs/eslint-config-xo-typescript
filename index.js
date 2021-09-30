@@ -447,6 +447,20 @@ module.exports = {
 
 		'no-redeclare': 'off',
 		'@typescript-eslint/no-redeclare': 'error',
+		'no-restricted-imports': 'off',
+		'@typescript-eslint/no-restricted-imports': [
+			'error',
+			[
+				'error',
+				'domain',
+				'freelist',
+				'smalloc',
+				'punycode',
+				'sys',
+				'querystring',
+				'colors'
+			]
+		],
 		'@typescript-eslint/no-require-imports': 'error',
 		'@typescript-eslint/no-this-alias': [
 			'error',
