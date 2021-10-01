@@ -543,7 +543,8 @@ module.exports = {
 		'@typescript-eslint/prefer-optional-chain': 'error',
 		'@typescript-eslint/prefer-readonly': 'error',
 
-		// Disabled until https://github.com/typescript-eslint/typescript-eslint/issues/1758 is fixed. Currently, it's too difficult to accept `Map` as a parameter.
+		// TODO: Try to enable this again in 2023.
+		// Disabled for now as it's too annoying and will cause too much churn. It also has bugs: https://github.com/typescript-eslint/typescript-eslint/search?q=%22prefer-readonly-parameter-types%22+is:issue&state=open&type=issues
 		// '@typescript-eslint/prefer-readonly-parameter-types': [
 		// 	'error',
 		// 	{
