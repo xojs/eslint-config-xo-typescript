@@ -281,9 +281,9 @@ module.exports = {
 		'@typescript-eslint/naming-convention': [
 			'error',
 			{
-				// selector: 'default',
+				// selector: ['variableLike', 'memberLike', 'property', 'method'],
 				// Note: Leaving out `parameter` and `typeProperty` because of the mentioned known issues.
-				selector: ['variable', 'function', 'classProperty', 'objectLiteralProperty', 'parameterProperty', 'classMethod', 'objectLiteralMethod', 'typeMethod', 'accessor', 'enumMember', 'class', 'interface', 'typeAlias', 'enum', 'typeParameter'],
+				selector: ['variable', 'function', 'classProperty', 'objectLiteralProperty', 'parameterProperty', 'classMethod', 'objectLiteralMethod', 'typeMethod', 'accessor', 'enumMember'],
 				format: [
 					'strictCamelCase'
 				],
