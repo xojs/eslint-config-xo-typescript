@@ -274,77 +274,79 @@ module.exports = {
 
 		// We use `@typescript-eslint/naming-convention` in favor of `camelcase`.
 		camelcase: 'off',
-		// TODO: Enable this again when the following is fixed:
+		// Known issues:
 		// - https://github.com/typescript-eslint/typescript-eslint/issues/1485
 		// - https://github.com/typescript-eslint/typescript-eslint/issues/1484
 		// TODO: Prevent `_` prefix on private fields when TypeScript 3.8 is out.
-		// '@typescript-eslint/naming-convention': [
-		// 	'error',
-		// 	{
-		// 		selector: 'default',
-		// 		format: [
-		// 			'strictCamelCase'
-		// 		],
-		// 		// We allow double underscope because of GraphQL type names and some React names.
-		// 		leadingUnderscore: 'allowSingleOrDouble',
-		// 		trailingUnderscore: 'allow',
-		// 		// Ignore `{'Retry-After': retryAfter}` type properties.
-		// 		filter: {
-		// 			regex: '[- ]',
-		// 			match: false
-		// 		}
-		// 	},
-		// 	{
-		// 		selector: 'typeLike',
-		// 		format: [
-		// 			'StrictPascalCase'
-		// 		]
-		// 	},
-		// 	{
-		// 		selector: 'variable',
-		// 		types: [
-		// 			'boolean'
-		// 		],
-		// 		format: [
-		// 			'StrictPascalCase'
-		// 		],
-		// 		prefix: [
-		// 			'is',
-		// 			'has',
-		// 			'can',
-		// 			'should',
-		// 			'will',
-		// 			'did'
-		// 		]
-		// 	},
-		// 	{
-		// 		// Interface name should not be prefixed with `I`.
-		// 		selector: 'interface',
-		// 		filter: /^(?!I)[A-Z]/.source,
-		// 		format: [
-		// 			'StrictPascalCase'
-		// 		]
-		// 	},
-		// 	{
-		// 		// Type parameter name should either be `T` or a descriptive name.
-		// 		selector: 'typeParameter',
-		// 		filter: /^T$|^[A-Z][a-zA-Z]+$/.source,
-		// 		format: [
-		// 			'StrictPascalCase'
-		// 		]
-		// 	},
-		// 	// Allow these in non-camel-case when quoted.
-		// 	{
-		// 		selector: [
-		// 			'classProperty',
-		// 			'objectLiteralProperty'
-		// 		],
-		// 		format: null,
-		// 		modifiers: [
-		// 			'requiresQuotes'
-		// 		]
-		// 	}
-		// ],
+		'@typescript-eslint/naming-convention': [
+			'error',
+			{
+				// selector: 'default',
+				// Note: Leaving out `parameter` and `typeProperty` because of the mentioned known issues.
+				selector: ['variable', 'function', 'classProperty', 'objectLiteralProperty', 'parameterProperty', 'classMethod', 'objectLiteralMethod', 'typeMethod', 'accessor', 'enumMember', 'class', 'interface', 'typeAlias', 'enum', 'typeParameter'],
+				format: [
+					'strictCamelCase'
+				],
+				// We allow double underscope because of GraphQL type names and some React names.
+				leadingUnderscore: 'allowSingleOrDouble',
+				trailingUnderscore: 'allow',
+				// Ignore `{'Retry-After': retryAfter}` type properties.
+				filter: {
+					regex: '[- ]',
+					match: false
+				}
+			},
+			{
+				selector: 'typeLike',
+				format: [
+					'StrictPascalCase'
+				]
+			},
+			{
+				selector: 'variable',
+				types: [
+					'boolean'
+				],
+				format: [
+					'StrictPascalCase'
+				],
+				prefix: [
+					'is',
+					'has',
+					'can',
+					'should',
+					'will',
+					'did'
+				]
+			},
+			{
+				// Interface name should not be prefixed with `I`.
+				selector: 'interface',
+				filter: /^(?!I)[A-Z]/.source,
+				format: [
+					'StrictPascalCase'
+				]
+			},
+			{
+				// Type parameter name should either be `T` or a descriptive name.
+				selector: 'typeParameter',
+				filter: /^T$|^[A-Z][a-zA-Z]+$/.source,
+				format: [
+					'StrictPascalCase'
+				]
+			},
+			// Allow these in non-camel-case when quoted.
+			{
+				selector: [
+					'classProperty',
+					'objectLiteralProperty'
+				],
+				format: null,
+				modifiers: [
+					'requiresQuotes'
+				]
+			}
+		],
 		'@typescript-eslint/no-base-to-string': 'error',
 		'no-array-constructor': 'off',
 		'@typescript-eslint/no-array-constructor': 'error',
