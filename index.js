@@ -283,7 +283,8 @@ module.exports = {
 			{
 				// selector: ['variableLike', 'memberLike', 'property', 'method'],
 				// Note: Leaving out `parameter` and `typeProperty` because of the mentioned known issues.
-				selector: ['variable', 'function', 'classProperty', 'objectLiteralProperty', 'parameterProperty', 'classMethod', 'objectLiteralMethod', 'typeMethod', 'accessor', 'enumMember'],
+				// Note: We are intentionally leaving out `enumMember` as it's usually pascal-case or upper-snake-case.
+				selector: ['variable', 'function', 'classProperty', 'objectLiteralProperty', 'parameterProperty', 'classMethod', 'objectLiteralMethod', 'typeMethod', 'accessor'],
 				format: [
 					'strictCamelCase'
 				],
