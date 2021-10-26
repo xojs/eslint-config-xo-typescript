@@ -90,8 +90,7 @@ module.exports = {
 					'[[]]': 'Don\'t use `[[]]`. It only allows an array with a single element which is an empty array. Use `SomeType[][]` instead.',
 					'[[[]]]': 'Don\'t use `[[[]]]`. Use `SomeType[][][]` instead.',
 					'[[[[]]]]': 'ur drunk 🤡',
-					'[[[[[]]]]]': '🦄💥',
-					Omit: 'Prefer the `Except` type in the `type-fest` package instead as it\'s stricter.'
+					'[[[[[]]]]]': '🦄💥'
 				}
 			}
 		],
