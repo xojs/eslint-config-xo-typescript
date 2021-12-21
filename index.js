@@ -570,7 +570,13 @@ module.exports = {
 			'error',
 			'single'
 		],
-		'@typescript-eslint/restrict-plus-operands': 'error',
+		'@typescript-eslint/restrict-plus-operands': [
+			'error',
+			{
+				checkCompoundAssignments: true,
+				allowAny: false
+			}
+		],
 		'@typescript-eslint/restrict-template-expressions': [
 			'error',
 			{
