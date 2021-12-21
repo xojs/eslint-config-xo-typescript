@@ -471,7 +471,13 @@ module.exports = {
 			}
 		],
 		'no-throw-literal': 'off',
-		'@typescript-eslint/no-throw-literal': 'error',
+		'@typescript-eslint/no-throw-literal': [
+			'error',
+			{
+				allowThrowingAny: false,
+				allowThrowingUnknown: false
+			}
+		],
 		'@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
 
 		// `no-unnecessary-condition` is essentially a stricter version of `no-constant-condition`, but that isn't currently enabled
