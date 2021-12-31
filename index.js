@@ -79,13 +79,10 @@ module.exports = {
 						fixWith: 'Record<string, unknown>'
 					},
 					Function: 'Use a specific function type instead, like `() => void`.',
-
-					// TODO: Try to enable this in 2021.
-					// null: {
-					// 	message: 'Use `undefined` instead. See: https://github.com/sindresorhus/meta/issues/7',
-					// 	fixWith: 'undefined'
-					// }
-
+					null: {
+						message: 'Use `undefined` instead. See: https://github.com/sindresorhus/meta/issues/7',
+						fixWith: 'undefined'
+					},
 					'[]': 'Don\'t use the empty array type `[]`. It only allows empty arrays. Use `SomeType[]` instead.',
 					'[[]]': 'Don\'t use `[[]]`. It only allows an array with a single element which is an empty array. Use `SomeType[][]` instead.',
 					'[[[]]]': 'Don\'t use `[[[]]]`. Use `SomeType[][][]` instead.',
@@ -132,7 +129,7 @@ module.exports = {
 			}
 		],
 
-		// This rule is fine. I just don't want to deal with the churn yet. Enable this in 2022.
+		// This rule is fine. I just don't want to deal with the churn yet. Enable this in 2023.
 		// '@typescript-eslint/consistent-type-definitions': [
 		// 	'error',
 		// 	'type'
@@ -268,7 +265,7 @@ module.exports = {
 		],
 
 		// Disabled for now as it causes too many weird TypeScript issues. I'm not sure whether the problems are caused by bugs in TS or problems in my types.
-		// TODO: Try to re-enable this again in 2022.
+		// TODO: Try to re-enable this again in 2023.
 		// '@typescript-eslint/method-signature-style': 'error',
 
 		// We use `@typescript-eslint/naming-convention` in favor of `camelcase`.
@@ -365,7 +362,7 @@ module.exports = {
 			}
 		],
 
-		// TODO: Try to enable this again in 2022.
+		// TODO: Try to enable this again in 2023.
 		// Disabled for now. This is a great rule. It's just that TypeScript is not good enough yet to not use `any` in many places.
 		// For example: https://github.com/sindresorhus/refined-github/pull/2391#discussion_r318995182
 		// '@typescript-eslint/no-explicit-any': [
@@ -484,7 +481,6 @@ module.exports = {
 		'no-constant-condition': 'error',
 
 		// TODO: Try to enable this again in 2023 *if* the following are resolved:
-		// - https://github.com/microsoft/TypeScript/issues/13778 (otherwise, it will report on if checks for elements extracted from array)
 		// - https://github.com/microsoft/TypeScript/issues/36393
 		// - The rule needs a way to ignore runtime type-checks: https://github.com/sindresorhus/refined-github/pull/3168
 		// - Run the rule on https://github.com/sindresorhus/refined-github and ensure there are no false-positives
@@ -612,7 +608,7 @@ module.exports = {
 			'always'
 		],
 
-		// TODO: Reconsider enabling it again in 2021.
+		// TODO: Reconsider enabling it again in 2023.
 		// NOTE: The rule was complete redone in typescript-eslint v3, so this config needs to be changed before this is enabled.
 		// Disabled for now as it's too strict.
 		// Relevant discussion: https://github.com/sindresorhus/refined-github/pull/2521#discussion_r343013852
@@ -654,6 +650,9 @@ module.exports = {
 		// TypeScript might have features not supported in a specific Node.js version.
 		'node/no-unsupported-features/es-syntax': 'off',
 		'node/no-unsupported-features/es-builtins': 'off',
+
+		// We use `@typescript-eslint/ban-types` instead.
+		'unicorn/no-null': 'off'
 	},
 	overrides: [
 		{
