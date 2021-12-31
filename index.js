@@ -652,7 +652,10 @@ module.exports = {
 		'node/no-unsupported-features/es-builtins': 'off',
 
 		// We use `@typescript-eslint/ban-types` instead.
-		'unicorn/no-null': 'off'
+		'unicorn/no-null': 'off',
+
+		// The rule is buggy with TS and it's not needed as TS already enforces valid imports and references at compile-time.
+		'import/namespace': 'off'
 	},
 	overrides: [
 		{
