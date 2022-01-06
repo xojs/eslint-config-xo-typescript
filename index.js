@@ -1,4 +1,5 @@
 'use strict';
+
 const getNamingConventionRule = ({isTsx}) => ({
 	"@typescript-eslint/naming-convention": [
 	'error',
@@ -11,7 +12,7 @@ const getNamingConventionRule = ({isTsx}) => ({
 			'strictCamelCase',
 			isTsx && 'StrictPascalCase',
 		].filter(Boolean),
-		// We allow double underscope because of GraphQL type names and some React names.
+		// We allow double underscore because of GraphQL type names and some React names.
 		leadingUnderscore: 'allowSingleOrDouble',
 		trailingUnderscore: 'allow',
 		// Ignore `{'Retry-After': retryAfter}` type properties.
@@ -71,7 +72,7 @@ const getNamingConventionRule = ({isTsx}) => ({
 		]
 	}
 	]
-})
+});
 
 module.exports = {
 	parser: require.resolve('@typescript-eslint/parser'),
