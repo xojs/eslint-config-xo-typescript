@@ -1,20 +1,21 @@
 import test from 'ava';
-import tempWrite from 'temp-write';
-import eslint from 'eslint';
-import config from '..';
+import {ESLint} from 'eslint';
+import config from '../index.js';
 
-const hasRule = (errors, ruleId) => errors.some(x => x.ruleId === ruleId);
+const hasRule = (errors, ruleId) => errors.some(error => error.ruleId === ruleId);
 
-function runEslint(string, config) {
-	const linter = new eslint.CLIEngine({
+async function runEslint(string, config) {
+	const eslint = new ESLint({
 		useEslintrc: false,
-		configFile: tempWrite.sync(JSON.stringify(config))
+		overrideConfig: config,
 	});
 
-	return linter.executeOnText(string, '_x.ts').results[0].messages;
+	const [firstResult] = await eslint.lintText(string, {filePath: '_x.ts'});
+
+	return firstResult.messages;
 }
 
-test.failing('main', t => {
-	const errors = runEslint('const foo: number = 5;', config);
+test.failing('main', async t => {
+	const errors = await runEslint('const foo: number = 5;', config);
 	t.true(hasRule(errors, '@typescript-eslint/no-inferrable-types'), JSON.stringify(errors));
 });
