@@ -477,8 +477,9 @@ module.exports = {
 		'@typescript-eslint/no-throw-literal': [
 			'error',
 			{
-				allowThrowingAny: false,
-				allowThrowingUnknown: false
+				// This should ideally be `false`, but it makes rethrowing errors inconvenient. There should be a separate `allowRethrowingUnknown` option.
+				allowThrowingUnknown: true,
+				allowThrowingAny: false
 			}
 		],
 		'@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
