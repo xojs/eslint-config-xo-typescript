@@ -477,8 +477,7 @@ module.exports = {
 		'@typescript-eslint/no-throw-literal': [
 			'error',
 			{
-				allowThrowingAny: false,
-				allowThrowingUnknown: false
+				allowThrowingAny: false
 			}
 		],
 		'@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
