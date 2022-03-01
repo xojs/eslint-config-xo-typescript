@@ -513,6 +513,7 @@ module.exports = {
 		// '@typescript-eslint/no-unsafe-member-access': 'error',
 
 		'@typescript-eslint/no-unsafe-return': 'error',
+		'@typescript-eslint/no-useless-empty-export': 'error',
 		'no-unused-expressions': 'off',
 		'@typescript-eslint/no-unused-expressions': 'error',
 		'no-unused-vars': 'off',
