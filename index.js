@@ -616,6 +616,11 @@ module.exports = {
 			'error',
 			'always'
 		],
+		'space-before-blocks': 'off',
+		'@typescript-eslint/space-before-blocks': [
+			'error',
+			'always'
+		],
 
 		// TODO: Reconsider enabling it again in 2023.
 		// NOTE: The rule was complete redone in typescript-eslint v3, so this config needs to be changed before this is enabled.
