@@ -517,17 +517,18 @@ module.exports = {
 		'no-unused-expressions': 'off',
 		'@typescript-eslint/no-unused-expressions': 'error',
 		'no-unused-vars': 'off',
-		'@typescript-eslint/no-unused-vars': [
-			'error',
-			{
-				vars: 'all',
-				args: 'after-used',
-				ignoreRestSiblings: true,
-				argsIgnorePattern: /^_/.source,
-				caughtErrors: 'all',
-				caughtErrorsIgnorePattern: /^_$/.source
-			}
-		],
+		// NOTE: TypeScript already catches unused variables. Let us know if there's something this rule catches that TypeScript does not.
+		// '@typescript-eslint/no-unused-vars': [
+		// 	'error',
+		// 	{
+		// 		vars: 'all',
+		// 		args: 'after-used',
+		// 		ignoreRestSiblings: true,
+		// 		argsIgnorePattern: /^_/.source,
+		// 		caughtErrors: 'all',
+		// 		caughtErrorsIgnorePattern: /^_$/.source
+		// 	}
+		// ],
 		'no-useless-constructor': 'off',
 		'@typescript-eslint/no-useless-constructor': 'error',
 		'object-curly-spacing': 'off',
