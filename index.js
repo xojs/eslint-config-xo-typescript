@@ -4,6 +4,12 @@ const getNamingConventionRule = ({isTsx}) => ({
 	'@typescript-eslint/naming-convention': [
 		'error',
 		{
+			// Ignore `{'Retry-After': retryAfter}` type properties.
+			selector: ['classProperty', 'objectLiteralProperty', 'classMethod', 'objectLiteralMethod', 'typeMethod'],
+			format: null,
+			modifiers: ["requiresQuotes"]
+		},
+		{
 			/// selector: ['variableLike', 'memberLike', 'property', 'method'],
 			// Note: Leaving out `parameter` and `typeProperty` because of the mentioned known issues.
 			// Note: We are intentionally leaving out `enumMember` as it's usually pascal-case or upper-snake-case.
@@ -14,12 +20,7 @@ const getNamingConventionRule = ({isTsx}) => ({
 			].filter(Boolean),
 			// We allow double underscore because of GraphQL type names and some React names.
 			leadingUnderscore: 'allowSingleOrDouble',
-			trailingUnderscore: 'allow',
-			// Ignore `{'Retry-After': retryAfter}` type properties.
-			filter: {
-				regex: '[- ]',
-				match: false
-			}
+			trailingUnderscore: 'allow'
 		},
 		{
 			selector: 'typeLike',
