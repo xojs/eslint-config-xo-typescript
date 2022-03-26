@@ -356,6 +356,7 @@ module.exports = {
 		'no-dupe-class-members': 'off',
 		'@typescript-eslint/no-dupe-class-members': 'error',
 		'no-duplicate-imports': 'off',
+		'import/no-duplicates': 'off',
 		'@typescript-eslint/no-duplicate-imports': 'error',
 		'@typescript-eslint/no-confusing-void-expression': 'error',
 		'@typescript-eslint/no-dynamic-delete': 'error',
