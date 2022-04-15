@@ -658,7 +658,12 @@ module.exports = {
 
 		'@typescript-eslint/prefer-regexp-exec': 'error',
 		'@typescript-eslint/prefer-return-this-type': 'error',
-		'@typescript-eslint/unified-signatures': 'error',
+		'@typescript-eslint/unified-signatures': [
+			'error',
+			{
+				ignoreDifferentlyNamedParameters: true
+			}
+		],
 
 		// Disabled per typescript-eslint recommendation: https://github.com/typescript-eslint/typescript-eslint/blob/e26e43ffba96f6d46198b22f1c8dd5c814db2652/docs/getting-started/linting/FAQ.md#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
 		'no-undef': 'off',
