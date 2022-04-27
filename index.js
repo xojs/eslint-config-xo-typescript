@@ -548,6 +548,12 @@ module.exports = {
 		],
 		'@typescript-eslint/no-var-requires': 'error',
 		'@typescript-eslint/non-nullable-type-assertion-style': 'error',
+		'@typescript-eslint/parameter-properties': [
+			'error',
+			{
+				prefer: 'parameter-properties'
+			}
+		],
 		'@typescript-eslint/prefer-as-const': 'error',
 		'@typescript-eslint/prefer-for-of': 'error',
 		'@typescript-eslint/prefer-function-type': 'error',
