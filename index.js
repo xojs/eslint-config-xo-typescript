@@ -72,12 +72,6 @@ const getNamingConventionRule = ({isTsx}) => ({
 		},
 		// Allow these in non-camel-case when quoted.
 		{
-			selector: ['classProperty', 'objectLiteralProperty'],
-			format: null,
-			modifiers: ['requiresQuotes'],
-		},
-		// Allow these in non-camel-case when quoted.
-		{
 			selector: [
 				'classProperty',
 				'objectLiteralProperty'
