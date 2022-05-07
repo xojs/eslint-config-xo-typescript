@@ -7,7 +7,7 @@ const getNamingConventionRule = ({isTsx}) => ({
 			/// selector: ['variableLike', 'memberLike', 'property', 'method'],
 			// Note: Leaving out `parameter` and `typeProperty` because of the mentioned known issues.
 			// Note: We are intentionally leaving out `enumMember` as it's usually pascal-case or upper-snake-case.
-			selector: ['variable', 'function', 'classProperty', 'objectLiteralProperty', 'parameterProperty', 'classMethod', 'objectLiteralMethod', 'typeMethod', 'accessor'],
+			selector: ['variable', 'function',  'parameterProperty', 'classMethod', 'objectLiteralMethod', 'typeMethod', 'accessor'],
 			format: [
 				'strictCamelCase',
 				isTsx && 'StrictPascalCase',
@@ -59,6 +59,22 @@ const getNamingConventionRule = ({isTsx}) => ({
 			format: [
 				'StrictPascalCase'
 			]
+		},
+		{
+			selector: ['classProperty', 'objectLiteralProperty'],
+			format: [
+				'strictCamelCase',
+				isTsx && 'StrictPascalCase',
+			].filter(Boolean),
+			// We allow double underscore because of GraphQL type names and some React names.
+			leadingUnderscore: 'allowSingleOrDouble',
+			trailingUnderscore: 'allow',
+		},
+		// Allow these in non-camel-case when quoted.
+		{
+			selector: ['classProperty', 'objectLiteralProperty'],
+			format: null,
+			modifiers: ['requiresQuotes'],
 		},
 		// Allow these in non-camel-case when quoted.
 		{
