@@ -141,6 +141,10 @@ module.exports = {
 						message: 'Use `symbol` instead.',
 						fixWith: 'symbol'
 					},
+					BigInt: {
+						message: 'Use `bigint` instead.',
+						fixWith: 'bigint'
+					},
 					Object: {
 						message: 'The `Object` type is mostly the same as `unknown`. You probably want `Record<string, unknown>` instead. See https://github.com/typescript-eslint/typescript-eslint/pull/848',
 						fixWith: 'Record<string, unknown>'
