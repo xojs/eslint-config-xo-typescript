@@ -556,7 +556,7 @@ module.exports = {
 		'@typescript-eslint/parameter-properties': [
 			'error',
 			{
-				prefer: 'parameter-properties'
+				prefer: 'parameter-property'
 			}
 		],
 		'@typescript-eslint/prefer-as-const': 'error',
