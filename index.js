@@ -359,9 +359,6 @@ module.exports = {
 		'@typescript-eslint/no-array-constructor': 'error',
 		'no-dupe-class-members': 'off',
 		'@typescript-eslint/no-dupe-class-members': 'error',
-		'no-duplicate-imports': 'off',
-		'import/no-duplicates': 'off',
-		'@typescript-eslint/no-duplicate-imports': 'error',
 		'@typescript-eslint/no-confusing-void-expression': 'error',
 		'@typescript-eslint/no-duplicate-enum-values': 'error',
 		'@typescript-eslint/no-dynamic-delete': 'error',
@@ -687,7 +684,10 @@ module.exports = {
 		'unicorn/no-null': 'off',
 
 		// The rule is buggy with TS and it's not needed as TS already enforces valid imports and references at compile-time.
-		'import/namespace': 'off'
+		'import/namespace': 'off',
+
+		// `import/no-duplicates` works better with TypeScript.
+		'no-duplicate-imports': 'off'
 	},
 	overrides: [
 		{
