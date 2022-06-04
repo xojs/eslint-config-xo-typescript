@@ -207,12 +207,10 @@ module.exports = {
 				objectLiteralTypeAssertions: 'allow-as-parameter'
 			}
 		],
-
-		// This rule is fine. I just don't want to deal with the churn yet. Enable this in 2023.
-		// '@typescript-eslint/consistent-type-definitions': [
-		// 	'error',
-		// 	'type'
-		// ],
+		'@typescript-eslint/consistent-type-definitions': [
+			'error',
+			'type'
+		],
 
 		// Disabled because it's too annoying. Enable it when it's more mature, smarter, and more flexible.
 		// https://github.com/typescript-eslint/typescript-eslint/search?q=%22explicit-function-return-type%22&state=open&type=Issues
