@@ -1,3 +1,4 @@
+import path from 'node:path'
 import test from 'ava';
 import {ESLint} from 'eslint';
 import config from '../index.js';
@@ -10,12 +11,13 @@ async function runEslint(string, config) {
 		overrideConfig: config,
 	});
 
-	const [firstResult] = await eslint.lintText(string, {filePath: '_x.ts'});
+	const [firstResult] = await eslint.lintText(string, {filePath: path.resolve('test', '_x.ts')});
 
 	return firstResult.messages;
 }
 
-test.failing('main', async t => {
-	const errors = await runEslint('const foo: number = 5;', config);
+test('main', async t => {
+	const errors = await runEslint('import { Node } from "unist";\nconst foo: number = 5;', config);
 	t.true(hasRule(errors, '@typescript-eslint/no-inferrable-types'), JSON.stringify(errors));
+	t.false(hasRule(errors, 'import/no-unresolved'), JSON.stringify(errors));
 });

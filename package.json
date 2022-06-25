@@ -43,7 +43,11 @@
 		"hint",
 		"simple"
 	],
+	"dependencies": {
+		"eslint-import-resolver-typescript": "^2.7.1"
+	},
 	"devDependencies": {
+		"@types/unist": "^2.0.6",
 		"@typescript-eslint/eslint-plugin": "^5.22.0",
 		"@typescript-eslint/parser": "^5.22.0",
 		"ava": "^2.4.0",
@@ -53,6 +57,7 @@
 	"peerDependencies": {
 		"@typescript-eslint/eslint-plugin": ">=5.22.0",
 		"eslint": ">=8.0.0",
+		"eslint-plugin-import": ">=2.0.0",
 		"typescript": ">=4.4"
 	}
 }
