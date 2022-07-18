@@ -174,6 +174,10 @@ module.exports = {
 			'error',
 			'getters'
 		],
+		'@typescript-eslint/consistent-generic-constructors': [
+			'error',
+			'constructor'
+		],
 		'@typescript-eslint/consistent-indexed-object-style': 'error',
 		'brace-style': 'off',
 		'@typescript-eslint/brace-style': [
