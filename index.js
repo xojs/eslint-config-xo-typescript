@@ -215,6 +215,12 @@ module.exports = {
 			'error',
 			'type'
 		],
+		'@typescript-eslint/consistent-type-exports': [
+			'error',
+			{
+				fixMixedExportsWithInlineTypeSpecifier: true
+			}
+		],
 		'@typescript-eslint/consistent-type-imports': 'error',
 
 		// Disabled because it's too annoying. Enable it when it's more mature, smarter, and more flexible.
