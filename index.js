@@ -520,6 +520,7 @@ module.exports = {
 
 		'@typescript-eslint/no-unsafe-assignment': 'error',
 		'@typescript-eslint/no-unsafe-call': 'error',
+		'@typescript-eslint/no-unsafe-declaration-merging': 'error',
 
 		// Disabled until TypeScrpt supports the `node:` protocol.
 		// '@typescript-eslint/no-unsafe-member-access': 'error',
