@@ -221,7 +221,12 @@ module.exports = {
 				fixMixedExportsWithInlineTypeSpecifier: true
 			}
 		],
-		'@typescript-eslint/consistent-type-imports': 'error',
+		'@typescript-eslint/consistent-type-imports': [
+			'error',
+			{
+				fixStyle: 'inline-type-imports'
+			}
+		],
 
 		// Disabled because it's too annoying. Enable it when it's more mature, smarter, and more flexible.
 		// https://github.com/typescript-eslint/typescript-eslint/search?q=%22explicit-function-return-type%22&state=open&type=Issues
