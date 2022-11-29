@@ -321,7 +321,6 @@ module.exports = {
 
 					'private-decorated-field',
 					'private-instance-field',
-					'private-abstract-field',
 					'private-field',
 
 					'instance-field',
@@ -346,7 +345,6 @@ module.exports = {
 
 					'private-decorated-method',
 					'private-instance-method',
-					'private-abstract-method',
 					'private-method',
 
 					'instance-method',
