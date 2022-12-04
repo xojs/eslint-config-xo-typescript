@@ -516,10 +516,7 @@ module.exports = {
 		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
 		'@typescript-eslint/no-unnecessary-type-constraint': 'error',
 
-		// Disabled for now. When using try/catch, the error is by default `any` and if you pass the error anywhere, it will trigger this rule. This is a very common occurence.
-		// TODO: Enable this rule when TypeScript has more strongly typed errors, probably 2023 at the earliest.
-		// '@typescript-eslint/no-unsafe-argument': 'error',
-
+		'@typescript-eslint/no-unsafe-argument': 'error',
 		'@typescript-eslint/no-unsafe-assignment': 'error',
 		'@typescript-eslint/no-unsafe-call': 'error',
 		'@typescript-eslint/no-unsafe-declaration-merging': 'error',
