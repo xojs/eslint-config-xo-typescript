@@ -444,7 +444,7 @@ module.exports = {
 			'error',
 			{
 				// `!!` works better than `Boolean()` with control flow analysis since TS 4.4
-				allow: ["!!"]
+				allow: ['!!']
 			}
 		],
 			
