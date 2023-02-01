@@ -439,6 +439,15 @@ module.exports = {
 		],
 		'@typescript-eslint/no-for-in-array': 'error',
 		'@typescript-eslint/no-inferrable-types': 'error',
+		
+		'no-implicit-coercion': [
+			'error,
+			{
+				// `!!` works better than `Boolean()` with control flow analysis since TS 4.4
+				allow: ["!!"]
+			}
+		],
+			
 
 		// Disabled for now as it has too many false-positives.
 		// '@typescript-eslint/no-invalid-void-type': 'error',
