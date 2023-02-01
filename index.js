@@ -441,7 +441,7 @@ module.exports = {
 		'@typescript-eslint/no-inferrable-types': 'error',
 		
 		'no-implicit-coercion': [
-			'error,
+			'error',
 			{
 				// `!!` works better than `Boolean()` with control flow analysis since TS 4.4
 				allow: ["!!"]
