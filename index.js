@@ -79,8 +79,10 @@ module.exports = {
 	parserOptions: {
 		warnOnUnsupportedTypeScriptVersion: false,
 		sourceType: 'module',
-		jsx: true,
-		project: 'tsconfig.json'
+		project: 'tsconfig.json',
+		ecmaFeatures: {
+			jsx: true
+		}
 	},
 	plugins: [
 		'@typescript-eslint'
