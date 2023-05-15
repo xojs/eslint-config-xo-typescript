@@ -486,7 +486,10 @@ module.exports = {
 				],
 			},
 		],
-		'@typescript-eslint/no-redundant-type-constituents': 'error',
+
+		// The rule is buggy and keeps inferring `any` for types that are not `any`. Just a lot of false-positives.
+		// '@typescript-eslint/no-redundant-type-constituents': 'error',
+
 		'@typescript-eslint/no-require-imports': 'error',
 		'@typescript-eslint/no-this-alias': [
 			'error',
