@@ -11,7 +11,7 @@
 		"url": "https://sindresorhus.com"
 	},
 	"engines": {
-		"node": ">=12"
+		"node": ">=16"
 	},
 	"scripts": {
 		"test": "ava"
@@ -44,16 +44,16 @@
 		"simple"
 	],
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^5.58.0",
-		"@typescript-eslint/parser": "^5.58.0",
+		"@typescript-eslint/eslint-plugin": "^6.0.0",
+		"@typescript-eslint/parser": "^6.0.0",
 		"ava": "^2.4.0",
-		"eslint": "^7.8.1",
-		"typescript": ">=4.4"
+		"eslint": "^8.0.0",
+		"typescript": "^5.1.6"
 	},
 	"peerDependencies": {
-		"@typescript-eslint/eslint-plugin": ">=5.58.0",
-		"@typescript-eslint/parser": ">=5.58.0",
+		"@typescript-eslint/eslint-plugin": ">=6.0.0",
+		"@typescript-eslint/parser": ">=6.0.0",
 		"eslint": ">=8.0.0",
-		"typescript": ">=4.4"
+		"typescript": ">=4.7"
 	}
 }
