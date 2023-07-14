@@ -610,7 +610,6 @@ module.exports = {
 		'@typescript-eslint/restrict-plus-operands': [
 			'error',
 			{
-				checkCompoundAssignments: true,
 				allowAny: false
 			}
 		],
