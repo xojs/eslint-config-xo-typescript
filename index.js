@@ -711,6 +711,9 @@ module.exports = {
 		// The rule is buggy with TS and it's not needed as TS already enforces valid imports and references at compile-time.
 		'import/namespace': 'off',
 
+		// TypeScript already does a better job at this.
+		'import/named': 'off',
+
 		// `import/no-duplicates` works better with TypeScript.
 		'no-duplicate-imports': 'off'
 	},
