@@ -674,7 +674,13 @@ module.exports = {
 		// 	}
 		// ],
 
-		'@typescript-eslint/switch-exhaustiveness-check': 'error',
+		'@typescript-eslint/switch-exhaustiveness-check': [
+			'error',
+			{
+				allowDefaultCaseForExhaustiveSwitch: false,
+				requireDefaultForNonUnion: true
+			}
+		],
 		'@typescript-eslint/triple-slash-reference': [
 			'error',
 			{
