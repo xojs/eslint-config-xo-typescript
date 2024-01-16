@@ -378,6 +378,7 @@ module.exports = {
 		'@typescript-eslint/no-base-to-string': 'error',
 		'no-array-constructor': 'off',
 		'@typescript-eslint/no-array-constructor': 'error',
+		'@typescript-eslint/no-array-delete': 'error',
 		'no-dupe-class-members': 'off',
 		'@typescript-eslint/no-dupe-class-members': 'error',
 		'@typescript-eslint/no-confusing-void-expression': 'error',
