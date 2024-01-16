@@ -595,6 +595,8 @@ module.exports = {
 			}
 		],
 		'@typescript-eslint/prefer-optional-chain': 'error',
+		'prefer-promise-reject-errors': 'off',
+		'@typescript-eslint/prefer-promise-reject-errors': 'error',
 		'@typescript-eslint/prefer-readonly': 'error',
 
 		// TODO: Try to enable this again in 2023.
