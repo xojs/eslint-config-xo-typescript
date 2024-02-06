@@ -365,7 +365,7 @@ module.exports = {
 		],
 
 		// Disabled for now as it causes too many weird TypeScript issues. I'm not sure whether the problems are caused by bugs in TS or problems in my types.
-		// TODO: Try to re-enable this again in 2023.
+		// TODO: Try to re-enable this again in 2026.
 		// '@typescript-eslint/method-signature-style': 'error',
 
 		// We use `@typescript-eslint/naming-convention` in favor of `camelcase`.
@@ -394,7 +394,7 @@ module.exports = {
 			}
 		],
 
-		// TODO: Try to enable this again in 2023.
+		// TODO: Try to enable this again in 2025.
 		// Disabled for now. This is a great rule. It's just that TypeScript is not good enough yet to not use `any` in many places.
 		// For example: https://github.com/sindresorhus/refined-github/pull/2391#discussion_r318995182
 		// '@typescript-eslint/no-explicit-any': [
@@ -518,7 +518,7 @@ module.exports = {
 		// `no-unnecessary-condition` is essentially a stricter version of `no-constant-condition`, but that isn't currently enabled
 		'no-constant-condition': 'error',
 
-		// TODO: Try to enable this again in 2023 *if* the following are resolved:
+		// TODO: Try to enable this again in 2025 *if* the following are resolved:
 		// - https://github.com/microsoft/TypeScript/issues/36393
 		// - The rule needs a way to ignore runtime type-checks: https://github.com/sindresorhus/refined-github/pull/3168
 		// - Run the rule on https://github.com/sindresorhus/refined-github and ensure there are no false-positives
@@ -582,6 +582,7 @@ module.exports = {
 			}
 		],
 		'@typescript-eslint/prefer-as-const': 'error',
+		'@typescript-eslint/prefer-find': 'error',
 		'@typescript-eslint/prefer-for-of': 'error',
 		'@typescript-eslint/prefer-function-type': 'error',
 		'@typescript-eslint/prefer-includes': 'error',
