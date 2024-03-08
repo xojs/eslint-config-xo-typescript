@@ -678,7 +678,7 @@ module.exports = {
 		// 	}
 		// ],
 		
-		'default-case': 'off',
+		'default-case': 'off', // It conflicts with `@typescript-eslint/switch-exhaustiveness-check`. It would still be nice to have this rule for non-exhaustive switches though.
 		'@typescript-eslint/switch-exhaustiveness-check': [
 			'error',
 			{
