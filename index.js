@@ -677,7 +677,8 @@ module.exports = {
 		// 		allowSafe: true
 		// 	}
 		// ],
-
+		
+		'default-case': 'off',
 		'@typescript-eslint/switch-exhaustiveness-check': [
 			'error',
 			{
