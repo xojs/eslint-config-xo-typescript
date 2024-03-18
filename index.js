@@ -677,7 +677,7 @@ module.exports = {
 		// 		allowSafe: true
 		// 	}
 		// ],
-		
+
 		'default-case': 'off', // It conflicts with `@typescript-eslint/switch-exhaustiveness-check`. It would still be nice to have this rule for non-exhaustive switches though.
 		'@typescript-eslint/switch-exhaustiveness-check': [
 			'error',
@@ -713,6 +713,7 @@ module.exports = {
 				ignoreDifferentlyNamedParameters: true
 			}
 		],
+		'@typescript-eslint/use-unknown-in-catch-callback-variable': 'error',
 
 		// Disabled per typescript-eslint recommendation: https://github.com/typescript-eslint/typescript-eslint/blob/e26e43ffba96f6d46198b22f1c8dd5c814db2652/docs/getting-started/linting/FAQ.md#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
 		'no-undef': 'off',
