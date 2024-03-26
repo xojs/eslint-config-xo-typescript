@@ -505,7 +505,7 @@ module.exports = {
 			}
 		],
 		'no-throw-literal': 'off',
-		'@typescript-eslint/no-throw-literal': [
+		'@typescript-eslint/only-throw-error': [
 			'error',
 			{
 				// This should ideally be `false`, but it makes rethrowing errors inconvenient. There should be a separate `allowRethrowingUnknown` option.
