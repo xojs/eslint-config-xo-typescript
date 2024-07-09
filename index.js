@@ -444,6 +444,7 @@ module.exports = {
 		'@typescript-eslint/no-floating-promises': [
 			'error',
 			{
+				checkThenables: true,
 				ignoreVoid: true, // Prepend a function call with `void` to mark it as not needing to be await'ed, which silences this rule.
 				ignoreIIFE: true
 			}
@@ -527,6 +528,7 @@ module.exports = {
 		// Also disable `no-constant-condition` when this is enabled
 		// '@typescript-eslint/no-unnecessary-condition': 'error',
 
+		'@typescript-eslint/no-unnecessary-parameter-property-assignment': 'error',
 		'@typescript-eslint/no-unnecessary-qualifier': 'error',
 		'@typescript-eslint/no-unnecessary-type-arguments': 'error',
 		'@typescript-eslint/no-unnecessary-type-assertion': 'error',

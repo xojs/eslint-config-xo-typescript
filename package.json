@@ -45,15 +45,15 @@
 		"simple"
 	],
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^7.11.0",
-		"@typescript-eslint/parser": "^7.11.0",
+		"@typescript-eslint/eslint-plugin": "^7.16.0",
+		"@typescript-eslint/parser": "^7.16.0",
 		"ava": "^6.1.2",
 		"eslint": "^8.56.0",
 		"typescript": "^5.3.3"
 	},
 	"peerDependencies": {
-		"@typescript-eslint/eslint-plugin": ">=7.11.0",
-		"@typescript-eslint/parser": ">=7.11.0",
+		"@typescript-eslint/eslint-plugin": ">=7.16.0",
+		"@typescript-eslint/parser": ">=7.16.0",
 		"eslint": ">=8.56.0",
 		"typescript": ">=5.0.0"
 	}
