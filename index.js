@@ -159,7 +159,6 @@ module.exports = {
 						message: 'The `object` type is hard to use. Use `Record<string, unknown>` instead. See: https://github.com/typescript-eslint/typescript-eslint/pull/848',
 						fixWith: 'Record<string, unknown>'
 					},
-					Function: 'Use a specific function type instead, like `() => void`.',
 					null: {
 						message: 'Use `undefined` instead. See: https://github.com/sindresorhus/meta/issues/7',
 						fixWith: 'undefined'
@@ -543,6 +542,7 @@ module.exports = {
 		'@typescript-eslint/no-unsafe-call': 'error',
 		'@typescript-eslint/no-unsafe-declaration-merging': 'error',
 		'@typescript-eslint/no-unsafe-enum-comparison': 'error',
+		'@typescript-eslint/no-unsafe-function-type': 'error',
 
 		// Disabled until TypeScrpt supports the `node:` protocol.
 		// '@typescript-eslint/no-unsafe-member-access': 'error',
