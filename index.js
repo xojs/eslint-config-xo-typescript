@@ -127,30 +127,6 @@ module.exports = {
 			{
 				extendDefaults: false,
 				types: {
-					String: {
-						message: 'Use `string` instead.',
-						fixWith: 'string'
-					},
-					Number: {
-						message: 'Use `number` instead.',
-						fixWith: 'number'
-					},
-					Boolean: {
-						message: 'Use `boolean` instead.',
-						fixWith: 'boolean'
-					},
-					Symbol: {
-						message: 'Use `symbol` instead.',
-						fixWith: 'symbol'
-					},
-					BigInt: {
-						message: 'Use `bigint` instead.',
-						fixWith: 'bigint'
-					},
-					Object: {
-						message: 'The `Object` type is mostly the same as `unknown`. You probably want `Record<string, unknown>` instead. See https://github.com/typescript-eslint/typescript-eslint/pull/848',
-						fixWith: 'Record<string, unknown>'
-					},
 					'{}': {
 						message: 'The `{}` type is mostly the same as `unknown`. You probably want `Record<string, unknown>` instead.',
 						fixWith: 'Record<string, unknown>'
@@ -581,6 +557,7 @@ module.exports = {
 			}
 		],
 		'@typescript-eslint/no-var-requires': 'error',
+		'@typescript-eslint/no-wrapper-object-types': 'error',
 		'@typescript-eslint/non-nullable-type-assertion-style': 'error',
 		'@typescript-eslint/parameter-properties': [
 			'error',
