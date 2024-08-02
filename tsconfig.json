@@ -1,7 +1,10 @@
 {
 	"compilerOptions": {
-		"strict": true,
+		"strict": true
 	},
+	"files": [
+		"test/test.js"
+	],
 	"include": [
 		"test"
 	]
