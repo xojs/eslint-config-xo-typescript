@@ -1,15 +1,19 @@
-'use strict';
-const path = require('path');
+import eslintConfigXo from './index.js';
 
-module.exports = {
-	extends: path.join(__dirname, 'index.js'),
-	rules: {
-		'@typescript-eslint/indent': [
-			'error',
-			2,
-			{
-				SwitchCase: 1
-			}
-		]
-	}
-};
+const [config] = eslintConfigXo;
+
+export default [
+	{
+		...config,
+		rules: {
+			...config.rules,
+			'@stylistic/indent': [
+				'error',
+				2,
+				{
+					SwitchCase: 1,
+				},
+			],
+		},
+	},
+];
