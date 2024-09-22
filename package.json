@@ -13,7 +13,7 @@
 	"type": "module",
 	"exports": {
 		".": "./index.js",
-		"./space": "space.js"
+		"./space": "./space.js"
 	},
 	"sideEffects": false,
 	"engines": {

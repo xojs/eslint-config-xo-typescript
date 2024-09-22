@@ -22,7 +22,7 @@ Add some ESLint config to your package.json (or `.eslintrc`):
 
 ```js
 // eslint.config.js
-import xoTypeScript from 'eslint-plugin-xo-typescript';
+import xoTypeScript from 'eslint-config-xo-typescript';
 
 export default [
 	...xoTypeScript,
@@ -32,7 +32,7 @@ export default [
 Use the `space` sub-config if you want 2 space indentation instead of tabs:
 
 ```js
-import xoTypeScriptSpace from 'eslint-plugin-xo-typescript/space';
+import xoTypeScriptSpace from 'eslint-config-xo-typescript/space';
 
 export default [
 	...xoTypeScriptSpace,
