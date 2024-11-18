@@ -466,7 +466,12 @@ const rules = {
 	//
 	// Also related: https://github.com/typescript-eslint/typescript-eslint/issues/1798
 	// Also disable `no-constant-condition` when this is enabled
-	// '@typescript-eslint/no-unnecessary-condition': 'error',
+	// '@typescript-eslint/no-unnecessary-condition': [
+	// 	'error',
+	// 	{
+	// 		checkTypePredicates: true
+	// 	}
+	// ],
 
 	'@typescript-eslint/no-unnecessary-parameter-property-assignment': 'error',
 	'@typescript-eslint/no-unnecessary-qualifier': 'error',
@@ -559,6 +564,7 @@ const rules = {
 	'@typescript-eslint/prefer-reduce-type-parameter': 'error',
 	'@typescript-eslint/prefer-string-starts-ends-with': 'error',
 	'@typescript-eslint/promise-function-async': 'error',
+	'@typescript-eslint/related-getter-setter-pairs': 'error',
 	quotes: 'off',
 	'@stylistic/quotes': [
 		'error',
