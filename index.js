@@ -491,6 +491,7 @@ const rules = {
 	'@typescript-eslint/no-unsafe-function-type': 'error',
 	'@typescript-eslint/no-unsafe-member-access': 'error',
 	'@typescript-eslint/no-unsafe-return': 'error',
+	'@typescript-eslint/no-unsafe-type-assertion': 'error',
 	'@typescript-eslint/no-useless-empty-export': 'error',
 	'no-unused-expressions': 'off',
 	'@typescript-eslint/no-unused-expressions': 'error',
