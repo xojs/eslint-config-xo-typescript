@@ -358,7 +358,8 @@ const rules = {
 	// 	{
 	// 		conditionalAssign: false,
 	// 		nestedBinaryExpressions: false,
-	// 		ignoreJSX: 'multi-line'
+	// 		ignoreJSX: 'multi-line',
+	// 		nestedConditionalExpressions: false,
 	// 	}
 	// ],
 
