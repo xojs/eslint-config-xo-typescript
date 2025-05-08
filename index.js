@@ -1,5 +1,6 @@
 import typescriptEslint from 'typescript-eslint';
 import jsConfig from 'eslint-config-xo';
+import stylistic from '@stylistic/eslint-plugin';
 
 const getNamingConventionRule = ({isTsx}) => ({
 	'@typescript-eslint/naming-convention': [
@@ -697,7 +698,8 @@ export default typescriptEslint.config(
 	...jsConfig,
 	{
 		plugins: {
-			'@typescript-eslint': typescriptEslint.plugin
+			'@typescript-eslint': typescriptEslint.plugin,
+			'@stylistic': stylistic,
 		},
 		languageOptions: {
 			sourceType: 'module',
