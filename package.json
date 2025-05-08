@@ -52,11 +52,11 @@
 	"dependencies": {
 		"@stylistic/eslint-plugin": "^4.2.0",
 		"eslint-config-xo": "^0.47.0",
-		"typescript-eslint": "^8.31.0"
+		"typescript-eslint": "^8.32.0"
 	},
 	"devDependencies": {
-		"ava": "^6.2.0",
-		"eslint": "^9.25.1",
+		"ava": "^6.3.0",
+		"eslint": "^9.26.0",
 		"typescript": "^5.8.3"
 	},
 	"peerDependencies": {

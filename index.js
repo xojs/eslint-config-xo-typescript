@@ -480,6 +480,9 @@ const rules = {
 	'@typescript-eslint/no-unnecessary-type-assertion': 'error',
 	'@typescript-eslint/no-unnecessary-type-constraint': 'error',
 
+	// TODO: Currently documented as flawed. Enable it if fixed in 2026.
+	// '@typescript-eslint/no-unnecessary-type-conversion': 'error',
+
 	// TODO: Enable at some point. Currently disabled because it's marked as unstable.
 	// https://typescript-eslint.io/rules/no-unnecessary-type-parameters/
 	// '@typescript-eslint/no-unnecessary-type-parameters': 'error',
