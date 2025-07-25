@@ -1,12 +1,9 @@
 import eslintConfigXo from './index.js';
 
-const [config] = eslintConfigXo;
-
 export default [
+	...eslintConfigXo,
 	{
-		...config,
 		rules: {
-			...config.rules,
 			'@stylistic/indent': [
 				'error',
 				2,
