@@ -204,7 +204,7 @@ const rules = {
 	// ],
 
 	'func-call-spacing': 'off',
-	'@stylistic/func-call-spacing': [
+	'@stylistic/function-call-spacing': [
 		'error',
 		'never'
 	],
