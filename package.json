@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-xo-typescript",
-	"version": "8.0.2",
+	"version": "9.0.0",
 	"description": "ESLint shareable config for TypeScript to be used with eslint-config-xo",
 	"license": "MIT",
 	"repository": "xojs/eslint-config-xo-typescript",
