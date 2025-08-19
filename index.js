@@ -475,7 +475,6 @@ const rules = {
 	// 	}
 	// ],
 
-	'@typescript-eslint/no-unnecessary-parameter-property-assignment': 'error',
 	'@typescript-eslint/no-unnecessary-qualifier': 'error',
 	'@typescript-eslint/no-unnecessary-type-arguments': 'error',
 	'@typescript-eslint/no-unnecessary-type-assertion': 'error',
@@ -531,12 +530,6 @@ const rules = {
 	],
 	'@typescript-eslint/no-wrapper-object-types': 'error',
 	'@typescript-eslint/non-nullable-type-assertion-style': 'error',
-	'@typescript-eslint/parameter-properties': [
-		'error',
-		{
-			prefer: 'parameter-property'
-		}
-	],
 	'@typescript-eslint/prefer-as-const': 'error',
 	'@typescript-eslint/prefer-find': 'error',
 	'@typescript-eslint/prefer-for-of': 'error',
