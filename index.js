@@ -498,6 +498,8 @@ const rules = {
 	'@typescript-eslint/no-unsafe-type-assertion': 'error',
 	'@typescript-eslint/no-useless-empty-export': 'error',
 	'no-unused-expressions': 'off',
+	'no-unused-private-class-members': 'off',
+	'@typescript-eslint/no-unused-private-class-members': 'error',
 	'@typescript-eslint/no-unused-expressions': 'error',
 	'no-unused-vars': 'off',
 	// NOTE: TypeScript already catches unused variables. Let us know if there's something this rule catches that TypeScript does not.
