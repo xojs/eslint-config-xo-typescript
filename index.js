@@ -630,6 +630,7 @@ const rules = {
 	// 	}
 	// ],
 
+	'@typescript-eslint/strict-void-return': 'error',
 	'default-case': 'off', // It conflicts with `@typescript-eslint/switch-exhaustiveness-check`. It would still be nice to have this rule for non-exhaustive switches though.
 	'@typescript-eslint/switch-exhaustiveness-check': [
 		'error',
